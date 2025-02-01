@@ -1,0 +1,2509 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+    <assembly>
+        <name>IronBarCode</name>
+    </assembly>
+    <members>
+        <member name="T:IronBarCode.DataMatrixWriter">
+            <summary>
+            A class allowing for advanced control on the generation of DataMatrix type barcodes.
+            <para><see cref="T:IronBarCode.DataMatrixWriter">DataMatrixWriter</see> allows setting of the DataMatrix shape.</para><para>Generated Barcodes can be exported as Images, Bitmaps, Files, or Streams.</para></summary>
+        </member>
+        <member name="T:IronBarCode.DataMatrixWriter.DataMatrixShape">
+            <summary>
+            Enumeration for DataMatrix shape. Can specify if you would like a <seealso cref="F:IronBarCode.DataMatrixWriter.DataMatrixShape.Square" /> (equal width and height) or <seealso cref="F:IronBarCode.DataMatrixWriter.DataMatrixShape.Rectangular" />.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.DataMatrixWriter.DataMatrixShape.Automatic">
+            <summary>
+            Default behavior. Allows IronBarcode to decide the dimensions of the DataMatrix.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.DataMatrixWriter.DataMatrixShape.Square">
+            <summary>
+            Square Shape. Width and Height of the generated Datamatrix will be equal.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.DataMatrixWriter.DataMatrixShape.Rectangular">
+            <summary>
+            Rectangular Shape. Width and Height may be different.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.DataMatrixWriter.CreateDataMatrix(System.String,System.Int32)">
+            <summary>
+            Renders a Square DataMatrix from a string of data. UTF-8 fully supported. For rendering of a rectangular DataMatrix, please find another overload of this method that supports width and height.
+            <para>Overload methods and methods of the created GeneratedBarcode object allow for barcode sizes and colors to be customized.</para><para>See method overloads for rectangular DataMatrix shapes.</para></summary>
+            <param name="value">The value of the DataMatrix as a string. Also suitable for URLS.</param>
+            <param name="size">The width and height of the DataMatrix in pixels.</param>
+            <returns>A GeneratedBarcode object for the DataMatrix which can be manipulated, annotated, and saved to an IronDrawing object, an image file, a PDF, a MediaURL, or a data stream.</returns>
+        </member>
+        <member name="M:IronBarCode.DataMatrixWriter.CreateDataMatrix(System.Byte[],System.Int32)">
+            <summary>
+            Renders a Square DataMatrix. For rendering of a rectangular DataMatrix, please find another overload of this method that supports width and height.
+            <para>Overload methods and methods of the created GeneratedBarcode object allow for barcode sizes and colors to be customized.</para><para>See method overloads for rectangular DataMatrix shapes.</para></summary>
+            <param name="binaryData">The value of the DataMatrix as a byte array.</param>
+            <param name="size">The width and height of the DataMatrix in pixels.</param>
+            <returns>A GeneratedBarcode object for the DataMatrix which can be manipulated, annotated, and saved to an IronDrawing object, an image file, a PDF, a MediaURL, or a data stream.</returns>
+        </member>
+        <member name="M:IronBarCode.DataMatrixWriter.CreateDataMatrix(System.IO.Stream,System.Int32)">
+            <summary>
+            Renders a Square DataMatrix. For rendering of a rectangular DataMatrix, please find another overload of this method that supports width and height.
+            <para>Overload methods and methods of the created GeneratedBarcode object allow for barcode sizes and colors to be customized.</para><para>See method overloads for rectangular DataMatrix shapes.</para></summary>
+            <param name="binaryDataStream">The value of the DataMatrix as a stream.</param>
+            <param name="size">The width and height of the DataMatrix in pixels.</param>
+            <returns>A GeneratedBarcode object for the DataMatrix which can be manipulated, annotated, and saved to an IronDrawing object, an image file, a PDF, a MediaURL, or a data stream.</returns>
+        </member>
+        <member name="M:IronBarCode.DataMatrixWriter.CreateDataMatrix(System.String,IronBarCode.DataMatrixWriter.DataMatrixShape,System.Int32,System.Int32)">
+            <summary>
+            Renders a DataMatrix from a String of data. UTF-8 fully supported.
+            <para>Overload methods and methods of the created GeneratedBarcode object allow for barcode sizes and colors to be customized.</para></summary>
+            <param name="value">The value of the DataMatrix as a string. Also suitable for URLS.</param>
+            <param name="shape">The shape of the DataMatrix.</param>
+            <param name="width">The width of the DataMatrix in pixels.</param>
+            <param name="height">The height of the DataMatrix in pixels.</param>
+            <returns>A GeneratedBarcode object for the DataMatrix which can be manipulated, annotated, and saved to an IronDrawing object, an image file, a PDF, a MediaURL, or a data stream.</returns>
+        </member>
+        <member name="M:IronBarCode.DataMatrixWriter.CreateDataMatrix(System.Byte[],IronBarCode.DataMatrixWriter.DataMatrixShape,System.Int32,System.Int32)">
+            <summary>
+            Renders a DataMatrix.
+            <para>Overload methods and methods of the created GeneratedBarcode object allow for barcode sizes and colors to be customized.</para></summary>
+            <param name="binaryData">The value of the DataMatrix as a byte array.</param>
+            <param name="shape">The shape of the DataMatrix.</param>
+            <param name="width">The width of the DataMatrix in pixels.</param>
+            <param name="height">The height of the DataMatrix in pixels.</param>
+            <returns>A GeneratedBarcode object for the DataMatrix which can be manipulated, annotated, and saved to an IronDrawing object, an image file, a PDF, a MediaURL, or a data stream.</returns>
+        </member>
+        <member name="M:IronBarCode.DataMatrixWriter.CreateDataMatrix(System.IO.Stream,IronBarCode.DataMatrixWriter.DataMatrixShape,System.Int32,System.Int32)">
+            <summary>
+            Renders a DataMatrix.
+            <para>Overload methods and methods of the created GeneratedBarcode object allow for barcode sizes and colors to be customized.</para></summary>
+            <param name="binaryDataStream">The value of the DataMatrix as a stream.</param>
+            <param name="shape">The shape of the DataMatrix.</param>
+            <param name="width">The width of the DataMatrix in pixels.</param>
+            <param name="height">The height of the DataMatrix in pixels.</param>
+            <returns>A GeneratedBarcode object for the DataMatrix which can be manipulated, annotated, and saved to an IronDrawing object, an image file, a PDF, a MediaURL, or a data stream.</returns>
+        </member>
+        <member name="T:IronBarCode.QRCodeWriter">
+            <summary>
+             A class allowing for advanced control on the generation of QR type barcodes.
+            <para><see cref="T:IronBarCode.QRCodeWriter">QRCodeWriter</see> gives the developer access to set QR code error correction levels, and to add logo images to QR codes.</para><para>Generated Barcodes can be exported as Images, Bitmaps, Files and Streams.</para></summary>
+        </member>
+        <member name="T:IronBarCode.QRCodeWriter.QrErrorCorrectionLevel">
+            <summary>
+            The error correction level of a QR code. A higher <see cref="T:IronBarCode.QRCodeWriter.QrErrorCorrectionLevel" /> creates more complex QR codes, which are less prone to reading errors. They may also be readable if damaged or partially obscured.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.QRCodeWriter.QrErrorCorrectionLevel.Low">
+            <summary>
+            QR Code error correction Level L. Approximately 7% of QR data can be recovered.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.QRCodeWriter.QrErrorCorrectionLevel.Medium">
+            <summary>
+            QR Code error correction Level M. Approximately 15% of QR data can be recovered.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.QRCodeWriter.QrErrorCorrectionLevel.High">
+            <summary>
+            QR Code error correction Level Q. Approximately 25% of QR data can be recovered.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.QRCodeWriter.QrErrorCorrectionLevel.Highest">
+            <summary>
+            QR Code error correction Level H. Approximately 30% of QR data can be recovered.
+            <para>Level H allows sufficient capacity for logo images or graphics to be stamped into QR codes.</para></summary>
+        </member>
+        <member name="M:IronBarCode.QRCodeWriter.CreateBarcode(System.String,System.Int32,IronBarCode.QRCodeWriter.QrErrorCorrectionLevel,System.Int32)">
+            <summary>
+             Synonym for IronBarCode.GeneratedBarcode.CreateQrCode
+            </summary>
+            <param name="value">The value of the QR code as a string.  Also suitable for URLS.</param>
+            <param name="errorCorrection">The error correction level of the QR code.</param>
+            <param name="size">The width and height of the QR code in pixels.</param>
+            <param name="qrVersion">The symbol version of the QR Code. The default value 0 will automatically assign an appropriate QR version for your data (highly recommended).</param>
+            <returns>A GeneratedBarcode object for the QR code which can be manipulated, annotated and saved to a System.Drawing.Image, an object, image file, PDF, MediaURL or data stream.</returns>
+        </member>
+        <member name="M:IronBarCode.QRCodeWriter.CreateQrCode(System.String,System.Int32,IronBarCode.QRCodeWriter.QrErrorCorrectionLevel,System.Int32)">
+            <summary>
+             Renders a QR code from a String of data.  UTF-8 fully supported.
+            <para>Overload methods and methods of the created GeneratedBarcode object allow for barcode sizes and colors to be customized.  Logos / Branding may also be added.</para></summary>
+            <param name="value">The value of the QR code as a string.  Also suitable for URLS.</param>
+            <param name="size">The width and height of the QR code in pixels.</param>
+            <param name="errorCorrection">The error correction level of the QR code.</param>
+            <param name="qrVersion">The symbol version of the QR Code. The default value 0 will automatically assign an appropriate QR version for your data (highly recommended).</param>
+            <returns>A GeneratedBarcode object for the QR code which can be manipulated, annotated and saved to a System.Drawing.Image, an object, image file, PDF, MediaURL or data stream.</returns>
+        </member>
+        <member name="M:IronBarCode.QRCodeWriter.CreateQrCode(System.Byte[],System.Int32,IronBarCode.QRCodeWriter.QrErrorCorrectionLevel,System.Int32)">
+            <summary>
+            Renders a QR code.
+            <para>Overload methods and methods of the created GeneratedBarcode object allow for barcode sizes and colors to be customized.   Logos &amp; Branding may also be added using the CreateQrCodeWithLogo method.</para></summary>
+            <param name="binaryData">The value of the QR code as a byte array.</param>
+            <param name="size">The width and height of the QR code in pixels.</param>
+            <param name="errorCorrection">The error correction level of the QR code.</param>
+            <param name="qrVersion">The symbol version of the QR Code. The default value 0 will automatically assign an appropriate QR version for your data (highly recommended).</param>
+            <returns>
+            A GeneratedBarcode object for the QR code which can be manipulated, annotated and saved to a System.Drawing.Image, an object, image file, PDF, MediaURL or data stream.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.QRCodeWriter.CreateQrCode(System.IO.Stream,System.Int32,IronBarCode.QRCodeWriter.QrErrorCorrectionLevel,System.Int32)">
+            <summary>
+            Renders a QR code.
+            <para>Overload methods and methods of the created GeneratedBarcode object allow for barcode sizes and colors to be customized.  Logos &amp; Branding may also be added using the CreateQrCodeWithLogo method.</para></summary>
+            <param name="binaryDataStream">The value of the QR code as a stream.</param>
+            <param name="size">The width and height of the QR code in pixels.</param>
+            <param name="errorCorrection">The error correction level of the QR code.</param>
+            <param name="qrVersion">The symbol version of the QR Code. The default value 0 will automatically assign an appropriate QR version for your data (highly recommended).</param>
+            <returns>
+            A GeneratedBarcode object for the QR code which can be manipulated, annotated and saved to a System.Drawing.Image, an object, image file, PDF, MediaURL or data stream.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.QRCodeWriter.CreateQrCodeWithLogo(System.String,IronBarCode.QRCodeLogo,System.Int32,System.Int32)">
+            <summary>
+            Renders a QR code of given dimensions with a logo image at its center.
+            </summary>
+            <param name="value">The value of the QR code as a string.  Also suitable for URLS.</param>
+            <param name="qrCodeLogo">A <see cref="T:IronBarCode.QRCodeLogo" /> class instance representing your desired logo image settings.</param>
+            <param name="size">The width and height of the QR code in pixels.</param>
+            <param name="qrVersion">The symbol version of the QR Code. The default value 0 will automatically assign an appropriate QR version for your data (highly recommended).</param>
+            <returns>
+            A GeneratedBarcode object for the QR code which can be manipulated, annotated and saved to a System.Drawing.Image, an object, image file, PDF, MediaURL or data stream.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.QRCodeWriter.CreateQrCodeWithLogo(System.Byte[],IronBarCode.QRCodeLogo,System.Int32,System.Int32)">
+            <summary>
+            Renders a QR code of given dimensions with a logo image at its center.
+            </summary>
+            <param name="binaryData">The value of the QR code as a byte array.</param>
+            <param name="qrCodeLogo">A <see cref="T:IronBarCode.QRCodeLogo" /> class instance representing your desired logo image settings.</param>
+            <param name="size">The width and height of the QR code in pixels.</param>
+            <param name="qrVersion">The symbol version of the QR Code. The default value 0 will automatically assign an appropriate QR version for your data (highly recommended).</param>
+            <returns>
+            A GeneratedBarcode object for the QR code which can be manipulated, annotated and saved to a System.Drawing.Image, an object, image file, PDF, MediaURL or data stream.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.QRCodeWriter.CreateQrCodeWithLogo(System.IO.Stream,IronBarCode.QRCodeLogo,System.Int32,System.Int32)">
+            <summary>
+            Renders a QR code of given dimensions with a logo image at its center.
+            </summary>
+            <param name="binaryDataStream">The value of the QR code as a stream.</param>
+            <param name="qrCodeLogo">A <see cref="T:IronBarCode.QRCodeLogo" /> class instance representing your desired logo image settings.</param>
+            <param name="size">The width and height of the QR code in pixels.</param>
+            <param name="qrVersion">The symbol version of the QR Code. The default value 0 will automatically assign an appropriate QR version for your data (highly recommended).</param>
+            <returns>
+            A GeneratedBarcode object for the QR code which can be manipulated, annotated and saved to a System.Drawing.Image, an object, image file, PDF, MediaURL or data stream.
+            </returns>
+        </member>
+        <member name="T:IronBarCode.BarcodeReader">
+            <summary>
+            A versatile static class for reading many popular barcode formats from Images and PDFs.
+            <para>IronBarCode.BarcodeReader supports barcode reading from Bitmaps, Image Objects, Image Files, Image Streams, MultiFrame Tiff Images and also PDFs.</para><para>Features: Crop-area support, Image filters, and preprocessing for improved accuracy including and the ability to automatically un-rotate, deskew and clean barcode image input.</para></summary>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.Read(System.String,IronBarCode.BarcodeReaderOptions)">
+            <summary>
+            Reads all barcodes from an image with granular settings for developer control to balance performance against accuracy for their given use case.
+            <para>Overloads of this method accept InputImage as <see cref="T:System.String" /> file paths as well as <see cref="T:IronSoftware.Drawing.AnyBitmap" />, array of <see cref="T:System.Byte" /> and <see cref="T:System.IO.Stream" /> types.</para></summary>
+            <param name="inputImage">The input image as a <see cref="T:System.String" /> file path to an image or PDF. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="barcodeReaderOptions">An Options class of BarcodeReader for reading many popular barcode formats from Images and PDFs in expected behavior.</param>
+            <returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.Read(IronSoftware.Drawing.AnyBitmap,IronBarCode.BarcodeReaderOptions)">
+            <summary>
+            Reads all barcodes from an image with granular settings for developer control to balance performance against accuracy for their given use case.
+            <para>Overloads of this method accept InputImage as <see cref="T:IronSoftware.Drawing.AnyBitmap" /> as well as <see cref="T:System.String" /> file paths, array of <see cref="T:System.Byte" /> and <see cref="T:System.IO.Stream" /> types.</para></summary>
+            <param name="inputImage">The input image as a <see cref="T:IronSoftware.Drawing.AnyBitmap" />. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="barcodeReaderOptions">An Options class of BarcodeReader for reading many popular barcode formats from Images and PDFs in expected behavior. </param>
+            <returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.Read(System.IO.Stream,IronBarCode.BarcodeReaderOptions)">
+            <summary>
+            Reads all barcodes from an image with granular settings for developer control to balance performance against accuracy for their given use case.
+            <para>Overloads of this method accept InputImage as <see cref="T:System.IO.Stream" /> as well as <see cref="T:IronSoftware.Drawing.AnyBitmap" />, array of <see cref="T:System.Byte" /> and <see cref="T:System.String" /> file paths types.</para></summary>
+            <param name="inputImage">The input image as a <see cref="T:System.IO.Stream" />. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="barcodeReaderOptions">An Options class of BarcodeReader for reading many popular barcode formats from Images and PDFs in expected behavior. </param>
+            <returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.Read(System.Byte[],IronBarCode.BarcodeReaderOptions)">
+            <summary>
+            Reads all barcodes from an image with granular settings for developer control to balance performance against accuracy for their given use case.
+            <para>Overloads of this method accept InputImage as array of <see cref="T:System.Byte" /> as well as <see cref="T:IronSoftware.Drawing.AnyBitmap" />, string file paths and <see cref="T:System.IO.Stream" /> types.</para><param name="inputImage">IEnumerable of Binary data of Image as a <see cref="T:System.Byte" /> array. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param><param name="barcodeReaderOptions">An Options class of BarcodeReader for reading many popular barcode formats from Images and PDFs in expected behavior.</param><returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns></summary>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.Read(System.Collections.Generic.IEnumerable{IronSoftware.Drawing.AnyBitmap},IronBarCode.BarcodeReaderOptions)">
+            <summary>
+            Reads barcodes from multiple images.
+            <para>Reading in parallel should set by BarcodeReaderOptions.Multithreaded = true and multiple threads will automatically be started and managed to improve performance for batch barcode reading tasks.</para><para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para><para>Overloads of this method accept InputImage as IEnumerable of <see cref="T:System.String" /> file paths as well as <see cref="T:IronSoftware.Drawing.AnyBitmap" />, array of <see cref="T:System.Byte" /> and <see cref="T:System.IO.Stream" /> types.</para></summary>
+            <param name="inputImages">The input images as an IEnumerable of <see cref="T:IronSoftware.Drawing.AnyBitmap" />. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="barcodeReaderOptions">An Options class of BarcodeReader for reading many popular barcode formats from Images and PDFs in expected behavior. </param>
+            <returns>An Array of <see cref="T:IronBarCode.BarcodeResults" />. Array length will be zero if no barcodes were found.</returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.Read(System.Collections.Generic.IEnumerable{System.String},IronBarCode.BarcodeReaderOptions)">
+            <summary>
+            Reads barcodes from multiple images.
+            <para>Reading in parallel should set by BarcodeReaderOptions.Multithreaded = true and multiple threads will automatically be started and managed to improve performance for batch barcode reading tasks.</para><para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para><para>Overloads of this method accept InputImage as IEnumerable of <see cref="T:System.String" /> file paths as well as <see cref="T:IronSoftware.Drawing.AnyBitmap" />, array of <see cref="T:System.Byte" /> and <see cref="T:System.IO.Stream" /> types.</para></summary>
+            <param name="inputImages">The input images as an IEnumerable of string file paths. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="barcodeReaderOptions">An Options class of BarcodeReader for reading many popular barcode formats from Images and PDFs in expected behavior. </param>
+            <returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.Read(System.Collections.Generic.IEnumerable{System.IO.Stream},IronBarCode.BarcodeReaderOptions)">
+            <summary>
+            Reads barcodes from multiple images.
+            <para>Reading in parallel should set by BarcodeReaderOptions.Multithreaded = true and multiple threads will automatically be started and managed to improve performance for batch barcode reading tasks.</para><para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para><para>Overloads of this method accept InputImage as IEnumerable of <see cref="T:System.IO.Stream" /> as well as <see cref="T:IronSoftware.Drawing.AnyBitmap" />, array of <see cref="T:System.Byte" /> and <see cref="T:System.String" /> file paths types.</para></summary>
+            <param name="inputImages">The input images as an IEnumerable of <see cref="T:System.IO.Stream" />. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="barcodeReaderOptions">An Options class of BarcodeReader for reading many popular barcode formats from Images and PDFs in expected behavior. </param>
+            <returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.Read(System.Collections.Generic.IEnumerable{System.Byte[]},IronBarCode.BarcodeReaderOptions)">
+            <summary>
+            Reads barcodes from multiple images.
+            <para>Reading in parallel should set by BarcodeReaderOptions.Multithreaded = true and multiple threads will automatically be started and managed to improve performance for batch barcode reading tasks.</para><para>Overloads of this method accept InputImage as IEnumerable of array of <see cref="T:System.Byte" /> as well as <see cref="T:IronSoftware.Drawing.AnyBitmap" />, string file paths and <see cref="T:System.IO.Stream" /> types.</para><param name="inputImage">IEnumerable of Binary data of Image as a <see cref="T:System.Byte" /> array. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param><param name="barcodeReaderOptions">An Options class of BarcodeReader for reading many popular barcode formats from Images and PDFs in expected behavior. </param><returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns></summary>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.ReadAsync(IronSoftware.Drawing.AnyBitmap,IronBarCode.BarcodeReaderOptions)">
+            <summary>
+            Reads a barcode from an image.
+            <para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para></summary>
+            <param name="inputImage">The input image as an <see cref="T:IronSoftware.Drawing.AnyBitmap" />. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="barcodeReaderOptions">An Options class of BarcodeReader for reading many popular barcode formats from Images and PDFs in expected behavior. </param>
+            <returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.ReadAsync(System.Collections.Generic.IEnumerable{IronSoftware.Drawing.AnyBitmap},IronBarCode.BarcodeReaderOptions)">
+            <summary>
+            Reads barcodes from multiple images in parallel. Multiple threads will automatically be started and managed to improve performance for batch barcode reading tasks.
+            <para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para></summary>
+            <param name="inputImages">The input images as an IEnumerable of <see cref="T:IronSoftware.Drawing.AnyBitmap" />. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="barcodeReaderOptions">An Options class of BarcodeReader for reading many popular barcode formats from Images and PDFs in expected behavior. </param>
+            <returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.ReadAsync(System.String,IronBarCode.BarcodeReaderOptions)">
+            <summary>
+            Reads a barcode from an image
+            <para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para></summary>
+            <param name="inputImage">The input image file paths. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="barcodeReaderOptions">An Options class of BarcodeReader for reading many popular barcode formats from Images and PDFs in expected behavior. </param>
+            <returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.ReadAsync(System.Collections.Generic.IEnumerable{System.String},IronBarCode.BarcodeReaderOptions)">
+            <summary>
+            Reads barcodes from multiple images in parallel. Multiple threads will automatically be started and managed to improve performance for batch barcode reading tasks.
+            <para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para><para>Overloads of this method accept InputImage as IEnumerable of <see cref="T:System.String" /> file paths as well as <see cref="T:IronSoftware.Drawing.AnyBitmap" /> , array of <see cref="T:System.Byte" /> and <see cref="T:System.IO.Stream" /> types.</para></summary>
+            <param name="inputImages">The input images as an IEnumerable of <see cref="T:System.String" /> file paths. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="barcodeReaderOptions">An Options class of BarcodeReader for reading many popular barcode formats from Images and PDFs in expected behavior. </param>
+            <returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.ReadAsync(System.IO.Stream,IronBarCode.BarcodeReaderOptions)">
+            <summary>
+            Reads barcode from an image
+            <para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para></summary>
+            <param name="inputImage">The input image as a <see cref="T:System.IO.Stream" />. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="barcodeReaderOptions">An Options class of BarcodeReader for reading many popular barcode formats from Images and PDFs in expected behavior. </param>
+            <returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.ReadAsync(System.Collections.Generic.IEnumerable{System.IO.Stream},IronBarCode.BarcodeReaderOptions)">
+            <summary>
+            Reads barcodes from multiple images in parallel.  Multiple threads will automatically be started and managed to improve performance for batch barcode reading tasks.
+            <para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para><para>Overloads of this method accept InputImage as IEnumerable of <see cref="T:System.IO.Stream" /> as well as <see cref="T:IronSoftware.Drawing.AnyBitmap" /> , array of <see cref="T:System.Byte" /> and <see cref="T:System.String" /> file paths types.</para></summary>
+            <param name="inputImages">The input images as an IEnumerable of <see cref="T:System.IO.Stream" />. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="barcodeReaderOptions">An Options class of BarcodeReader for reading many popular barcode formats from Images and PDFs in expected behavior. </param>
+            <returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.ReadAsync(System.Byte[],IronBarCode.BarcodeReaderOptions)">
+            <summary>
+            Reads barcode from an image
+            <para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para><param name="inputImage">Binary data of Image as a <see cref="T:System.Byte" /> array. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported..</param><param name="barcodeReaderOptions">An Options class of BarcodeReader for reading many popular barcode formats from Images and PDFs in expected behavior. </param><returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns></summary>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.ReadAsync(System.Collections.Generic.IEnumerable{System.Byte[]},IronBarCode.BarcodeReaderOptions)">
+            <summary>
+            Reads barcodes from multiple images in parallel.  Multiple threads will automatically be started and managed to improve performance for batch barcode reading tasks.
+            <para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para><para>Overloads of this method accept InputImage as IEnumerable of array of <see cref="T:System.Byte" /> as well as <see cref="T:IronSoftware.Drawing.AnyBitmap" />, string file paths and <see cref="T:System.IO.Stream" /> types.</para><param name="inputImages">IEnumerable of Binary data of Image as a <see cref="T:System.Byte" /> array. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported..</param><param name="barcodeReaderOptions">An Options class of BarcodeReader for reading many popular barcode formats from Images and PDFs in expected behavior. </param><returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns></summary>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.ReadPdf(System.Byte[],IronBarCode.PdfBarcodeReaderOptions)">
+            <summary>
+            Reads barcodes from every image embedded in every page of a PDF document.
+            <para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para><para>Overloads of this method accept PdfData as array of <see cref="T:System.Byte" /> as well as <see cref="T:System.String" /> and <see cref="T:System.IO.Stream" /> types.</para></summary>
+            <param name="pdfData">Binary data of PDF document as a <see cref="T:System.Byte" /> array.</param>
+            <param name="pdfBarcodeReaderOptions">An Options class of PdfBarcodeReader for reading barcode from pdf. </param>
+            <returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.ReadPdf(System.String,IronBarCode.PdfBarcodeReaderOptions)">
+            <summary>
+            Reads barcodes from every image embedded in every page of a PDF document.
+            <para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para><para>Overloads of this method accept PdfData as <see cref="T:System.String" /> file paths as well as array of <see cref="T:System.Byte" /> and <see cref="T:System.IO.Stream" /> types.</para></summary>
+            <param name="pdfPath">
+                <see cref="T:System.String" /> file path to a PDF document.</param>
+            <param name="pdfBarcodeReaderOptions">An Options class of PdfBarcodeReader for reading barcode from pdf. </param>
+            <returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.ReadPdf(System.IO.Stream,IronBarCode.PdfBarcodeReaderOptions)">
+            <summary>
+            Reads barcodes from every image embedded in every page of a PDF document.
+            <para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para><para>Overloads of this method accept PdfData as <see cref="T:System.IO.Stream" /> as well as array of <see cref="T:System.Byte" /> and <see cref="T:System.String" /> file paths types.</para></summary>
+            <param name="pdfStream">Binary data of PDF document as a <see cref="T:System.IO.Stream" />.</param>
+            <param name="pdfBarcodeReaderOptions">An Options class of PdfBarcodeReader for reading barcode from pdf. </param>
+            <returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.ReadPdf(System.Collections.Generic.IEnumerable{System.Byte[]},IronBarCode.PdfBarcodeReaderOptions)">
+            <summary>
+            Reads barcodes from every image embedded in every page of a PDF document.
+            <para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para><para>Overloads of this method accept PdfData as IEnumerable of array of <see cref="T:System.Byte" /> as well as <see cref="T:System.String" /> and <see cref="T:System.IO.Stream" /> types.</para><param name="pdfData">An enumerable of Binary data of PDF document as a <see cref="T:System.Byte" /> array.</param><param name="pdfBarcodeReaderOptions">An Options class of PdfBarcodeReader for reading barcode from pdf. </param><returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns></summary>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.ReadPdf(System.Collections.Generic.IEnumerable{System.String},IronBarCode.PdfBarcodeReaderOptions)">
+            <summary>
+            Reads barcodes from every image embedded in every page of a PDF document.
+            <para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para><para>Overloads of this method accept PdfData as IEnumerable of <see cref="T:System.String" /> file paths as well as array of <see cref="T:System.Byte" /> and <see cref="T:System.IO.Stream" /> types.</para><param name="pdfPaths">An enumerable of <see cref="T:System.String" /> file path to a PDF document.</param><param name="pdfBarcodeReaderOptions">An Options class of PdfBarcodeReader for reading barcode from pdf. </param><returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns></summary>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.ReadPdf(System.Collections.Generic.IEnumerable{System.IO.Stream},IronBarCode.PdfBarcodeReaderOptions)">
+            <summary>
+            Reads barcodes from every image embedded in every page of a PDF document.
+            <para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para><para>Overloads of this method accept PdfData as IEnumerable of <see cref="T:System.IO.Stream" /> as well as array of <see cref="T:System.Byte" /> and <see cref="T:System.String" /> file paths types.</para><param name="pdfStreams">An enumerable of Binary data of PDF document as a <see cref="T:System.IO.Stream" />.</param><param name="pdfBarcodeReaderOptions">An Options class of PdfBarcodeReader for reading barcode from pdf. </param><returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns></summary>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.ReadPdfAsync(System.Collections.Generic.IEnumerable{System.Byte[]},IronBarCode.PdfBarcodeReaderOptions)">
+            <summary>
+            Reads barcodes from every image embedded in every page of a PDF document.
+            <para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para><para>Overloads of this method accept PdfData as IEnumerable of array of <see cref="T:System.Byte" /> as well as <see cref="T:System.String" /> and <see cref="T:System.IO.Stream" /> types.</para><param name="pdfData">An enumerable of Binary data of PDF document as a <see cref="T:System.Byte" /> array.</param><param name="pdfBarcodeReaderOptions">An Options class of PdfBarcodeReader for reading barcode from pdf. </param><returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns></summary>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.ReadPdfAsync(System.Collections.Generic.IEnumerable{System.String},IronBarCode.PdfBarcodeReaderOptions)">
+            <summary>
+            Reads barcodes from every image embedded in every page of a PDF document.
+            <para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para><para>Overloads of this method accept PdfData as IEnumerable of <see cref="T:System.String" /> file paths as well as array of <see cref="T:System.Byte" /> and <see cref="T:System.IO.Stream" /> types.</para><param name="pdfPaths">An enumerable of string file path to a PDF document.</param><param name="pdfBarcodeReaderOptions">An Options class of PdfBarcodeReader for reading barcode from pdf. </param><returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns></summary>
+        </member>
+        <member name="M:IronBarCode.BarcodeReader.ReadPdfAsync(System.Collections.Generic.IEnumerable{System.IO.Stream},IronBarCode.PdfBarcodeReaderOptions)">
+            <summary>
+            Reads barcodes from every image embedded in every page of a PDF document.
+            <para>Features granular settings for developer control to balance performance against accuracy for their given use case.</para><para>Overloads of this method accept PdfData as IEnumerable of <see cref="T:System.IO.Stream" /> as well as array of <see cref="T:System.Byte" /> and <see cref="T:System.String" /> file paths types.</para><param name="pdfStreams">An enumerable of Binary data of PDF document as a <see cref="T:System.IO.Stream" />.</param><param name="pdfBarcodeReaderOptions">An Options class of PdfBarcodeReader for reading barcode from pdf. </param><returns>A <see cref="T:IronBarCode.BarcodeResults" />.</returns></summary>
+        </member>
+        <member name="T:IronBarCode.PageOrientation">
+            <summary>
+            Specifies the orientation of a page.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.PageOrientation.Landscape">
+            <summary>
+            The image's width is greater than its height.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.PageOrientation.Portrait">
+            <summary>
+            The image's height is greater than its width.
+            </summary>
+        </member>
+        <member name="T:IronBarCode.BarcodeOrientation">
+            <summary>
+            Specifies the orientation of a Barcode.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeOrientation.Horizontal">
+            <summary>
+            Barcode is aligned Horizontally
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeOrientation.Vertical">
+            <summary>
+            Barcode is aligned Vertically
+            </summary>
+        </member>
+        <member name="T:IronBarCode.ReadingSpeed">
+            <summary>
+            Specify the reading speed of IronBarcode. Setting a more detailed option will use more CPU and take longer.
+            <para>Please understand that pre-processing is CPU-heavy and we recommend experimenting with different settings starting with the lowest settings first and gradually working up from there.</para></summary>
+        </member>
+        <member name="F:IronBarCode.ReadingSpeed.Faster">
+            <summary>
+            No processing (Default). Barcode images are not preprocessed at all.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.ReadingSpeed.Balanced">
+            <summary>
+            Light Processing is performed to attempt to clarify the barcode area and make it stand out more for the reader.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.ReadingSpeed.Detailed">
+            <summary>
+            Medium Processing is performed to attempt to clarify the barcode area and make it stand out more for the reader.
+            <para>This is a CPU-intensive operation. We recommend experimenting with all levels of processing to ensure you are using the weakest one required to improve performance.</para></summary>
+        </member>
+        <member name="F:IronBarCode.ReadingSpeed.ExtremeDetail">
+            <summary>
+            Heavy Processing is performed to attempt to clarify the barcode area and make it stand out more for the reader.
+            <para>Please use this ReadingSpeed if you are trying to read multiple barcodes with the same values in one input file.</para><para>This is a very CPU-intensive operation and may still not improve blurry barcodes or noisy images. </para><para>Please consider using our filters: <see href="https://ironsoftware.com/csharp/ocr/tutorials/c-sharp-ocr-image-filters/" /></para></summary>
+        </member>
+        <member name="T:IronBarCode.BarcodeScanMode">
+            <summary>
+            Define how IronBarcode scans and detects barcodes in an image to read.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeScanMode.Auto">
+            <summary>
+            Reads barcodes with most optimal reader configurations automatically applied.
+            <para>Recommended for the best results and performance.</para></summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeScanMode.OnlyDetectionModel">
+            <summary>
+            Scan image for barcodes and return their positions as an array of <see cref="T:IronSoftware.Drawing.PointF" />.
+            <para>This mode does not read the detected barcodes, it only returns the positions of each barcode.</para></summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeScanMode.MachineLearningScan">
+            <summary>
+            Scan image for barcodes with machine learning detection and read them.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeScanMode.OnlyBasicScan">
+            <summary>
+            Read barcodes without machine learning detection or automatic image pre-processing and reader option configuration.
+            <para>This option can be used with IronBarCode.Slim alone.</para></summary>
+        </member>
+        <member name="T:IronBarCode.BarcodeWriter">
+            <summary>
+            A static class allowing for barcode images of many types to be generated dynamically.
+            <para>Generated Barcodes can be exported as Images, Bitmaps, Files, PDFs and Streams.</para></summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriter.DefaultWidth">
+            <summary>
+            The default max width of a rendered barcode in pixels. 250px
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriter.DefaultHeight">
+            <summary>
+            The default max height of a rendered barcode in pixels. 250px
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriter.DefaultCharacterEncoding">
+            <summary>
+            The default character encoding for binary data.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.BarcodeWriter.CreateBarcode(System.String,IronBarCode.BarcodeWriterEncoding)">
+            <summary>
+            Creates (renders) a barcode representing a string value.
+            </summary>
+            <param name="value">The value of the barcode as a string.</param>
+            <param name="barcodeType">Type of the barcode encoding type.  Supports many popular barcode formats including QR Codes. </param>
+            <returns>A GeneratedBarcode object which can be manipulated, annotated and saved to a IronSoftware.Drawing.AnyBitmap, an object, image file, PDF, MediaURL or data stream.</returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeWriter.CreateBarcode(System.Byte[],IronBarCode.BarcodeWriterEncoding)">
+            <summary>
+            Creates (renders) a barcode representing a binary value.
+            </summary>
+            <param name="binaryData">The binary data which the barcode will represent.</param>
+            <param name="barcodeType">Type of the barcode encoding type.  Supports many popular barcode formats including QR Codes.</param>
+            <returns>
+            A GeneratedBarcode object which can be manipulated, annotated and saved to a IronSoftware.Drawing.AnyBitmap, an object, image file, PDF, MediaURL or data stream.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeWriter.CreateBarcode(System.IO.Stream,IronBarCode.BarcodeWriterEncoding)">
+            <summary>
+            Creates (renders) a barcode representing a binary value.
+            </summary>
+            <param name="binaryDataStream">The binary data stream which the barcode will represent.</param>
+            <param name="barcodeType">Type of the barcode encoding type.  Supports many popular barcode formats including QR Codes.</param>
+            <returns>
+            A GeneratedBarcode object which can be manipulated, annotated and saved to a IronSoftware.Drawing.AnyBitmap, an object, image file, PDF, MediaURL or data stream.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeWriter.CreateBarcode(System.String,IronBarCode.BarcodeWriterEncoding,System.Int32,System.Int32)">
+            <summary>
+            Creates (renders) a barcode representing a string value.
+            </summary>
+            <param name="value">The value of the barcode as a string.</param>
+            <param name="barcodeType">Type of the barcode encoding type.  Supports many popular barcode formats including QR Codes.</param>
+            <param name="maxWidth">The maximum width (in pixels) of the barcode image which will be rendered.</param>
+            <param name="maxHeight">The maximum height (in pixels) of the barcode image which will be rendered.</param>
+            <returns>
+            A GeneratedBarcode object which can be manipulated, annotated and saved to a IronSoftware.Drawing.AnyBitmap, an object, image file, PDF, MediaURL or data stream.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeWriter.CreateBarcode(System.Byte[],IronBarCode.BarcodeWriterEncoding,System.Int32,System.Int32)">
+            <summary>
+            Creates (renders) a barcode representing a binary value.
+            </summary>
+            <param name="binaryData">The binary data which the barcode will represent.</param>
+            <param name="barcodeType">Type of the barcode encoding type.  Supports many popular barcode formats including QR Codes.</param>
+            <param name="maxWidth">The maximum width (in pixels) of the barcode image which will be rendered.</param>
+            <param name="maxHeight">The maximum height (in pixels) of the barcode image which will be rendered.</param>
+            <returns>
+            A GeneratedBarcode object which can be manipulated, annotated and saved to a IronSoftware.Drawing.AnyBitmap, an object, image file, PDF, MediaURL or data stream.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeWriter.CreateBarcode(System.IO.Stream,IronBarCode.BarcodeWriterEncoding,System.Int32,System.Int32)">
+            <summary>
+            Creates (renders) a barcode representing a binary value.
+            </summary>
+            <param name="binaryDataStream">The binary data stream which the barcode will represent.</param>
+            <param name="barcodeType">Type of the barcode encoding type.  Supports many popular barcode formats including QR Codes.</param>
+            <param name="maxWidth">The maximum width (in pixels) of the barcode image which will be rendered.</param>
+            <param name="maxHeight">The maximum height (in pixels) of the barcode image which will be rendered.</param>
+            <returns>
+            A GeneratedBarcode object which can be manipulated, annotated and saved to a IronSoftware.Drawing.AnyBitmap, an object, image file, PDF, MediaURL or data stream.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeWriter.CreateBarcode(System.String,IronBarCode.BarcodeEncoding)">
+            <summary>
+            Creates (renders) a barcode representing a string value.
+            </summary>
+            <param name="value">The value of the barcode as a string.</param>
+            <param name="barcodeType">Type of the barcode encoding type.  Supports many popular barcode formats including QR Codes. </param>
+            <returns>A GeneratedBarcode object which can be manipulated, annotated and saved to a IronSoftware.Drawing.AnyBitmap, an object, image file, PDF, MediaURL or data stream.</returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeWriter.CreateBarcode(System.Byte[],IronBarCode.BarcodeEncoding)">
+            <summary>
+            Creates (renders) a barcode representing a binary value.
+            </summary>
+            <param name="binaryData">The binary data which the barcode will represent.</param>
+            <param name="barcodeType">Type of the barcode encoding type.  Supports many popular barcode formats including QR Codes.</param>
+            <returns>
+            A GeneratedBarcode object which can be manipulated, annotated and saved to a IronSoftware.Drawing.AnyBitmap, an object, image file, PDF, MediaURL or data stream.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeWriter.CreateBarcode(System.IO.Stream,IronBarCode.BarcodeEncoding)">
+            <summary>
+            Creates (renders) a barcode representing a binary value.
+            </summary>
+            <param name="binaryDataStream">The binary data stream which the barcode will represent.</param>
+            <param name="barcodeType">Type of the barcode encoding type.  Supports many popular barcode formats including QR Codes.</param>
+            <returns>
+            A GeneratedBarcode object which can be manipulated, annotated and saved to a IronSoftware.Drawing.AnyBitmap, an object, image file, PDF, MediaURL or data stream.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeWriter.CreateBarcode(System.String,IronBarCode.BarcodeEncoding,System.Int32,System.Int32)">
+            <summary>
+            Creates (renders) a barcode representing a string value.
+            </summary>
+            <param name="value">The value of the barcode as a string.</param>
+            <param name="barcodeType">Type of the barcode encoding type.  Supports many popular barcode formats including QR Codes.</param>
+            <param name="maxWidth">The maximum width (in pixels) of the barcode image which will be rendered.</param>
+            <param name="maxHeight">The maximum height (in pixels) of the barcode image which will be rendered.</param>
+            <returns>
+            A GeneratedBarcode object which can be manipulated, annotated and saved to a IronSoftware.Drawing.AnyBitmap, an object, image file, PDF, MediaURL or data stream.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeWriter.CreateBarcode(System.Byte[],IronBarCode.BarcodeEncoding,System.Int32,System.Int32)">
+            <summary>
+            Creates (renders) a barcode representing a binary value.
+            </summary>
+            <param name="binaryData">The binary data which the barcode will represent.</param>
+            <param name="barcodeType">Type of the barcode encoding type.  Supports many popular barcode formats including QR Codes.</param>
+            <param name="maxWidth">The maximum width (in pixels) of the barcode image which will be rendered.</param>
+            <param name="maxHeight">The maximum height (in pixels) of the barcode image which will be rendered.</param>
+            <returns>
+            A GeneratedBarcode object which can be manipulated, annotated and saved to a IronSoftware.Drawing.AnyBitmap, an object, image file, PDF, MediaURL or data stream.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.BarcodeWriter.CreateBarcode(System.IO.Stream,IronBarCode.BarcodeEncoding,System.Int32,System.Int32)">
+            <summary>
+            Creates (renders) a barcode representing a binary value.
+            </summary>
+            <param name="binaryDataStream">The binary data stream which the barcode will represent.</param>
+            <param name="barcodeType">Type of the barcode encoding type.  Supports many popular barcode formats including QR Codes.</param>
+            <param name="maxWidth">The maximum width (in pixels) of the barcode image which will be rendered.</param>
+            <param name="maxHeight">The maximum height (in pixels) of the barcode image which will be rendered.</param>
+            <returns>
+            A GeneratedBarcode object which can be manipulated, annotated and saved to a IronSoftware.Drawing.AnyBitmap, an object, image file, PDF, MediaURL or data stream.
+            </returns>
+        </member>
+        <member name="T:IronBarCode.Deployment.PdfiumDeployment">
+            <summary>
+            Pdfium native binary deployment
+            </summary>
+        </member>
+        <member name="T:IronBarCode.Exceptions.IronBarCodeConfidenceThresholdException">
+            <summary>
+            Class for argument exception of confidence threshold
+            </summary>
+        </member>
+        <member name="M:IronBarCode.Exceptions.IronBarCodeConfidenceThresholdException.#ctor(System.String,System.Double)">
+            <summary>
+            Create confidence threshold exception message
+            </summary>
+            <param name="paramName">name of parameter that contains confidence threshold</param>
+            <param name="threshold">value of confidence threshold</param>
+        </member>
+        <member name="T:IronBarCode.Exceptions.IronBarCodeContentTooLongEncodingException">
+            <summary>
+            A specific Exception raised when the Value of a barcode is too long for the selected <see cref="T:IronBarCode.BarcodeEncoding" /></summary>
+        </member>
+        <member name="T:IronBarCode.Exceptions.IronBarCodeEncodingException">
+            <summary>
+            A generic Exception raised during the encoding of a barcode by IronBarCode
+            </summary>
+            <seealso cref="T:IronBarCode.Exceptions.IronBarCodeException" />
+        </member>
+        <member name="T:IronBarCode.Exceptions.IronBarCodeException">
+            <summary>
+            A generic Exception raised by IronBarCode
+            </summary>
+            <seealso cref="T:System.Exception" />
+        </member>
+        <member name="T:IronBarCode.Exceptions.IronBarCodeFileException">
+            <summary>
+            A generic Exception raised by IronBarCode when a file can not be read or written
+            </summary>
+            <seealso cref="T:IronBarCode.Exceptions.IronBarCodeException" />
+        </member>
+        <member name="T:IronBarCode.Exceptions.IronBarCodeFormatOnlyAcceptsNumericValuesEncodingException">
+            <summary>
+            A specific Exception raised when the Value of a barcode contains non numeric characters for a <see cref="T:IronBarCode.BarcodeEncoding" /> which only accepts digits.
+            </summary>
+        </member>
+        <member name="T:IronBarCode.Exceptions.IronBarCodeNativeException">
+            <summary>
+            Exception raised for exceptions in native-level code.
+            </summary>
+        </member>
+        <member name="T:IronBarCode.Exceptions.IronBarCodePdfPasswordException">
+            <summary>
+            Represents errors that occur during PDF processing in IronBarCode due to incorrect or missing password.
+            </summary>
+            <remarks>
+            This exception is thrown when a PDF document cannot be read due to password issues.
+            </remarks>
+        </member>
+        <member name="M:IronBarCode.Exceptions.IronBarCodePdfPasswordException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:IronBarCode.Exceptions.IronBarCodePdfPasswordException" /> class.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.Exceptions.IronBarCodePdfPasswordException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:IronBarCode.Exceptions.IronBarCodePdfPasswordException" /> class with a specified error message.
+            </summary>
+            <param name="message">The message that describes the error.</param>
+        </member>
+        <member name="M:IronBarCode.Exceptions.IronBarCodePdfPasswordException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:IronBarCode.Exceptions.IronBarCodePdfPasswordException" /> class with a specified error message and a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="inner">The exception that is the cause of the current exception, or a null reference (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="T:IronBarCode.Exceptions.IronBarCodeUnsupportedException">
+            <summary>
+            A generic Exception raised by IronBarCode
+            </summary>
+            <seealso cref="T:System.Exception" />
+        </member>
+        <member name="T:IronBarCode.Exceptions.IronBarCodeUnsupportedRendererEncodingException">
+            <summary>
+            A specific Exception raised when IronBarCode does not yet support the selected <see cref="T:IronBarCode.BarcodeEncoding" /> format. 
+            <para>We suggest using the <see cref="T:IronBarCode.BarcodeWriterEncoding" /> Enum to specify your barcode encoding format to avoid this Exception in future.</para></summary>
+        </member>
+        <member name="T:IronBarCode.GeneratedBarcode">
+            <summary>
+            A barcode generated by IronBarCode.
+            <para>In addition to exporting the barcode as a graphic, we may also resize it, recolor it and annotate it with this class using fluent notation.</para><para>GeneratedBarcodes may be exported as Images, Objects or PDF files.  They may also be exported as HTML for use on the web.</para></summary>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ToBitmap">
+            <summary>
+            Returns the barcode as an <see cref="T:IronSoftware.Drawing.AnyBitmap" /></summary>
+            <returns>A <see cref="T:IronSoftware.Drawing.AnyBitmap" /></returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ToImage">
+            <summary>
+            Returns the barcode as an <see cref="T:IronSoftware.Drawing.AnyBitmap" /></summary>
+            <returns>A <see cref="T:IronSoftware.Drawing.AnyBitmap" /></returns>
+        </member>
+        <member name="P:IronBarCode.GeneratedBarcode.Image">
+            <summary>
+            Returns the barcode as an <see cref="T:IronSoftware.Drawing.AnyBitmap" /></summary>
+            <returns>A <see cref="T:IronSoftware.Drawing.AnyBitmap" /></returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ToStream">
+            <summary>
+            Renders the barcode as an image <see cref="T:System.IO.Stream" /></summary>
+            <returns>A <see cref="T:System.IO.MemoryStream" /> containing encoded image file data.  The default encoding is PNG</returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ToStream(IronSoftware.Drawing.AnyBitmap.ImageFormat)">
+            <summary>
+            Renders the barcode as an image <see cref="T:System.IO.Stream" /></summary>
+            <param name="imageFormat">(optional) The image format as a <see cref="T:IronSoftware.Drawing.AnyBitmap.ImageFormat" />.</param>
+            <returns>
+            A <see cref="T:System.IO.MemoryStream" /> containing encoded image file data
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this GeneratedBarcodes value.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="P:IronBarCode.GeneratedBarcode.Width">
+            <summary>
+            Gets the final width of the  generated barcode image in pixels.
+            <para>Includes the width of margins and annotations</para></summary>
+            <value>
+            The width in px
+            </value>
+        </member>
+        <member name="P:IronBarCode.GeneratedBarcode.Height">
+            <summary>
+            Gets the final height of the generated barcode image in pixels.
+            <para>Includes the height of margins and annotations</para></summary>
+            <value>
+            The height in px
+            </value>
+        </member>
+        <member name="P:IronBarCode.GeneratedBarcode.Value">
+            <summary>
+            Gets the text value if the barcode
+            </summary>
+            <value>
+            The barcode value.
+            </value>
+        </member>
+        <member name="P:IronBarCode.GeneratedBarcode.BinaryValue">
+            <summary>
+            Gets the value of the barcode as binary data
+            </summary>
+            <value>
+            The barcode value as a byte array.
+            </value>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ToDataUrl">
+            <summary>
+            Converts the barcode to a base64 data URL.
+            <para>The data URI scheme is a uniform resource identifier (URI) scheme that provides a way to include data in-line in web pages as if they were external resources.</para><para><see href="https://en.wikipedia.org/wiki/Data_URI_scheme" /></para></summary>
+            <returns>The Data URL as a string.</returns>
+            <seealso cref="M:IronBarCode.GeneratedBarcode.ToHtmlTag" />
+            <seealso cref="M:IronBarCode.GeneratedBarcode.SaveAsHtmlFile(System.String)" />
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ToHtmlTag">
+            <summary>
+            Renders the barcode as a HTML image Tag.  The tag is fully formed (using a data-url&gt; and can be injected into HTML with no JS, CSS or image dependencies.
+            </summary>
+            <returns>An Html img tag as a string.</returns>
+        </member>
+        <member name="P:IronBarCode.GeneratedBarcode.BinaryStream">
+            <summary>
+            Returns a <see cref="T:System.IO.Stream" /> of the barcode rendered as a Bitmap image.
+            </summary>
+            <value>
+            The barcode image as a binary stream.
+            </value>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.Verify(System.String)">
+            <summary>
+            Verifies this barcode is still readable by IronBarCode.
+            <para>Resizing a barcode to a very small size using unconventional colors may make it unreadable to a machine. This method verifies that a barcode is still fully readable.</para></summary>
+            <returns>
+                <c>true</c> if the barcodes is still machine-readable</returns>
+        </member>
+        <member name="P:IronBarCode.GeneratedBarcode.BarcodeType">
+            <summary>
+            Gets the <see cref="T:IronBarCode.BarcodeEncoding" /> type of this barcode.
+            </summary>
+            <value>
+            The type of the barcode.
+            </value>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.SaveAsPdf(System.String)">
+            <summary>
+            Saves the barcode as a new PDF document.
+            </summary>
+            <param name="filePath">The file path for the PDF.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.SaveAsPng(System.String)">
+            <summary>
+            Saves the barcode as a PNG image file.
+            </summary>
+            <param name="filePath">The file path for the PNG.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ToPngBinaryData">
+            <summary>
+             Returns the barcode as the binary data for a PNG image.
+            </summary>
+            <returns>A byte array</returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ToPngStream">
+            <summary>
+             Returns the barcode as a <see cref="T:System.IO.MemoryStream" /> of the binary data for a PNG image.
+            </summary>
+            <returns>
+                <see cref="T:System.IO.Stream" />
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.SaveAsJpeg(System.String)">
+            <summary>
+            Saves the barcode as a JPEG image file.
+            </summary>
+            <param name="filePath">The file path for the JPEG.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ToJpegBinaryData">
+            <summary>
+             Returns the barcode as the binary data for a JPEG/JPG image.
+            </summary>
+            <returns>A byte array</returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ToJpegStream">
+            <summary>
+             Returns the barcode  as a <see cref="T:System.IO.MemoryStream" /> of the binary data for a JPEG/JPG image.
+            </summary>
+            <returns>
+                <see cref="T:System.IO.Stream" />
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.SaveAsTiff(System.String)">
+            <summary>
+             Saves the barcode as a TIFF image file.
+             </summary>
+            <param name="filePath">The file path for the TIFF.</param>
+            <returns>
+             This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+             </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ToTiffBinaryData">
+            <summary>
+             Returns the barcode as the binary data for a TIFF image.
+            </summary>
+            <returns>A byte array</returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ToTiffStream">
+            <summary>
+             Returns the barcode as a <see cref="T:System.IO.MemoryStream" /> of the binary data as the binary data for a TIFF image.
+            </summary>
+            <returns>
+                <see cref="T:System.IO.Stream" />
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.SaveAsGif(System.String)">
+            <summary>
+             Saves the barcode as a GIF image file.
+             </summary>
+            <param name="filePath">The file path for the GIF.</param>
+            <returns>
+             This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+             </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ToGifBinaryData">
+            <summary>
+             Returns the barcode as the binary data for a GIF image.
+            </summary>
+            <returns>A byte array</returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ToGifStream">
+            <summary>
+             Returns the barcode as a <see cref="T:System.IO.MemoryStream" /> of the binary data for a GIF image.
+            </summary>
+            <returns>
+                <see cref="T:System.IO.Stream" />
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.SaveAsWindowsBitmap(System.String)">
+            <summary>
+             Saves the barcode as a BMP image file.
+             </summary>
+            <param name="filePath">The file path for the BMP.</param>
+            <returns>
+             This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+             </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ToWindowsBitmapBinaryData">
+            <summary>
+            Returns the barcode as the binary data for a Bitmap BMP image.
+            </summary>
+            <returns>A byte array</returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ToWindowsBitmapStream">
+            <summary>
+            Returns the barcode as a <see cref="T:System.IO.MemoryStream" /> of the binary data for a Bitmap BMP image.
+            </summary>
+            <returns>
+                <see cref="T:System.IO.Stream" />
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.SaveAsImage(System.String)">
+            <summary>
+            Saves the Barcode as an image file.
+            <para>The image encoding will automatically match the file extension specified in your ImagePath. Defaults to Bitmap image encoding if ambiguous.</para></summary>
+            <param name="imagePath">The file path where the image will be saved to disk.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.SaveAsHtmlFile(System.String)">
+            <summary>
+            Saves the Barcode as  fully functional and self-contained HTML file.
+            <para>The image encoding will automatically match the file extension specified in your ImagePath. Defaults to Bitmap image encoding if ambiguous.</para></summary>
+            <param name="htmlFilePath">The file path where the HTML document will be saved.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+            <seealso cref="M:IronBarCode.GeneratedBarcode.ToHtmlTag" />
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ToPdfBinaryData">
+            <summary>
+            Returns a 1 page PDF document containing the barcode, as binary data.
+            </summary>
+            <returns>A byte array.</returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ToPdfStream">
+            <summary>
+            Returns a binary <see cref="T:System.IO.MemoryStream" /> containing a 1 page PDF document containing the barcode, as binary data.
+            </summary>
+            <returns>A <see cref="T:System.IO.Stream" /></returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.StampToExistingPdfPage(System.String,System.Int32,System.Int32,System.Int32,System.String)">
+            <summary>
+            Stamps (draws) the Barcode onto an existing page of an existing PDF document.
+            </summary>
+            <param name="PdfFilePath">The file path of the PDF which will have the Barcode added to it..</param>
+            <param name="x">The horizontal position of the barcode on the PDF page in pixels</param>
+            <param name="y">The vertical position of the barcode on the PDF page in pixels</param>
+            <param name="pageNumber">The page of the PDF to stamp.   [One Based] such that the first page is number 1 rather than 0.</param>
+            <param name="password">The PDF encryption or administrator password if this PDF is digitally protected from modification or opening.</param>
+            <returns />
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.StampToExistingPdfPages(System.String,System.Int32,System.Int32,System.Collections.Generic.IEnumerable{System.Int32},System.String)">
+            <summary>
+            Stamps (draws) the Barcode onto multiple existing pages of an existing PDF document.
+            </summary>
+            <param name="pdfFilePath">The file path of the PDF which will have the Barcode added to it..</param>
+            <param name="x">The horizontal position of the barcode on each PDF page in pixels</param>
+            <param name="y">The vertical position of the barcode on each PDF page in pixels</param>
+            <param name="pageNumbers">The page numbers of the PDF to stamp as an enumeration, list or array.  [One Based] such that the first page is number 1 rather than 0.</param>
+            <param name="password">The PDF encryption or administrator password if this PDF is digitally protected from modification or opening.</param>
+            <returns />
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.SetMargins(System.Int32)">
+            <summary>
+            Sets whitespace margins around the barcode.
+            </summary>
+            <param name="pixelWidth">Width of margins in pixels.</param>
+            <returns>This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.</returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.SetMargins(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Sets whitespace margins around the barcode.
+            </summary>
+            <param name="top">The top margin in pixels.</param>
+            <param name="right">The right margin in pixels.</param>
+            <param name="bottom">The bottom in pixels.</param>
+            <param name="left">The left margin in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ChangeBackgroundColor(IronSoftware.Drawing.Color)">
+            <summary>
+            Sets the background color behind the barcode.
+            </summary>
+            <param name="backgroundColor">Color of the background.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ChangeBarCodeColor(IronSoftware.Drawing.Color,System.Boolean)">
+            <summary>
+            Sets the barcode color.
+            </summary>
+            <param name="barcodeColor">Color of the barcode (foreground).</param>
+            <param name="forcedChangeColor">If ForcedChangeColor is true will skip checking by reading engine. Default is false.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ResizeTo(System.Int32,System.Int32)">
+            <summary>
+            Resizes the Barcode (excluding annotations and margins).  This process causes a re-render and is lossless.
+            </summary>
+            <param name="maxWidth">The maximum width of the barcode in px. May be ignored if the value is too small for the barcode to be read.</param>
+            <param name="maxHeight">The maximum height of the barcode in px.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.ResizeToMil(System.Double,System.Double,System.Int32)">
+            <summary>
+            Resize the barcode using the specified 'mil' width (thousandths of an inch)
+            </summary>
+            <param name="milWidth">The width of the narrowest barcode element, in thousandths of an inch.</param>
+            <param name="inchHeight">The height of the barcode in inch. (Default is 1 inch)</param>
+            <param name="DPI">Dots-per-inch (Default is 96)</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.KeepAspectRatio(System.Boolean,IronBarCode.BarCodeAspectSide)">
+            <summary>
+            Maintain the aspect ratio of the barcode when resizing it.
+            </summary>
+            <remarks>Works only for PDF417.</remarks>
+            <param name="keepAspectRatio">Is Keep Aspect Ratio.</param>
+            <param name="barCodeAspectSide">Side (Horizontal / Vertical) that need to keep. (Default is Horizontal)</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddBarcodeValueTextAboveBarcode">
+            <summary>
+            Annotates the barcode with text showing it's value.
+            <para>the barcode value is rendered above the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddBarcodeValueTextAboveBarcode(System.Int32)">
+            <summary>
+            Annotates the barcode with text showing it's value.
+            <para>the barcode value is rendered above the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="textSpacing">The top and bottom spacing of the barcode value text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddBarcodeValueTextAboveBarcode(System.String)">
+            <summary>
+            Annotates the barcode with text showing it's value.
+            <para>the barcode value is rendered above the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="fontPath">Path to the Font of the barcode value text. This may be a relative or a full absolute path.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddBarcodeValueTextAboveBarcode(System.String,System.Int32)">
+            <summary>
+            Annotates the barcode with text showing it's value.
+            <para>the barcode value is rendered above the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="fontPath">Path to the Font of the barcode value text. This may be a relative or a full absolute path.</param>
+            <param name="textSpacing">The top and bottom spacing of the barcode value text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddBarcodeValueTextAboveBarcode(System.Int32,System.Int32)">
+            <summary>
+            Annotates the barcode with text showing it's value.
+            <para>the barcode value is rendered above the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="topTextSpacing">The top spacing of the barcode value text in pixels.</param>
+            <param name="bottomTextSpacing">The bottom spacing of the barcode value text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddBarcodeValueTextAboveBarcode(System.String,System.Int32,System.Int32)">
+            <summary>
+            Annotates the barcode with text showing it's value.
+            <para>the barcode value is rendered above the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="fontPath">Path to the Font of the barcode value text. This may be a relative or a full absolute path.</param>
+            <param name="topTextSpacing">The top spacing of the barcode value text in pixels.</param>
+            <param name="bottomTextSpacing">The bottom spacing of the barcode value text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddBarcodeValueTextAboveBarcode(IronSoftware.Drawing.Font,IronSoftware.Drawing.Color)">
+            <summary>
+            Annotates the barcode with text showing it's value.
+            <para>the barcode value is rendered above the barcode.</para></summary>
+            <param name="fontFace">The typeface of the barcode value text.</param>
+            <param name="fontColor">Color of the barcode value text.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddBarcodeValueTextAboveBarcode(IronSoftware.Drawing.Font,IronSoftware.Drawing.Color,System.Int32)">
+            <summary>
+            Annotates the barcode with text showing it's value.
+            <para>the barcode value is rendered above the barcode.</para></summary>
+            <param name="fontFace">The typeface of the barcode value text.</param>
+            <param name="fontColor">Color of the barcode value text.</param>
+            <param name="textSpacing">The top and bottom spacing of the barcode value text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddBarcodeValueTextAboveBarcode(IronSoftware.Drawing.Font,IronSoftware.Drawing.Color,System.Int32,System.Int32)">
+            <summary>
+            Annotates the barcode with text showing it's value.
+            <para>the barcode value is rendered above the barcode.</para></summary>
+            <param name="fontFace">The typeface of the barcode value text.</param>
+            <param name="fontColor">Color of the barcode value text.</param>
+            <param name="topTextSpacing">The top spacing of the barcode value text in pixels.</param>
+            <param name="bottomTextSpacing">The bottom spacing of the barcode value text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddBarcodeValueTextBelowBarcode">
+            <summary>
+            Annotates the barcode with text showing it's value.
+            <para>the barcode value is rendered below the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddBarcodeValueTextBelowBarcode(System.Int32)">
+            <summary>
+            Annotates the barcode with text showing it's value.
+            <para>the barcode value is rendered below the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="textSpacing">The top and bottom spacing of the barcode value text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddBarcodeValueTextBelowBarcode(System.String)">
+            <summary>
+            Annotates the barcode with text showing it's value.
+            <para>the barcode value is rendered below the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="fontPath">Path to the Font of the barcode value text. This may be a relative or a full absolute path.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddBarcodeValueTextBelowBarcode(System.String,System.Int32)">
+            <summary>
+            Annotates the barcode with text showing it's value.
+            <para>the barcode value is rendered below the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="fontPath">Path to the Font of the barcode value text. This may be a relative or a full absolute path.</param>
+            <param name="textSpacing">The top and bottom spacing of the barcode value text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddBarcodeValueTextBelowBarcode(System.Int32,System.Int32)">
+            <summary>
+            Annotates the barcode with text showing it's value.
+            <para>the barcode value is rendered below the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="topTextSpacing">The top spacing of the barcode value text in pixels.</param>
+            <param name="bottomTextSpacing">The bottom spacing of the barcode value text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddBarcodeValueTextBelowBarcode(System.String,System.Int32,System.Int32)">
+            <summary>
+            Annotates the barcode with text showing it's value.
+            <para>the barcode value is rendered below the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="fontPath">Path to the Font of the barcode value text. This may be a relative or a full absolute path.</param>
+            <param name="topTextSpacing">The top spacing of the barcode value text in pixels.</param>
+            <param name="bottomTextSpacing">The bottom spacing of the barcode value text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddBarcodeValueTextBelowBarcode(IronSoftware.Drawing.Font,IronSoftware.Drawing.Color)">
+            <summary>
+            Annotates the barcode with text showing it's value.
+            <para>the barcode value is rendered below the barcode.</para></summary>
+            <param name="fontFace">The typeface of the barcode value text.</param>
+            <param name="fontColor">Color of the barcode value text.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddBarcodeValueTextBelowBarcode(IronSoftware.Drawing.Font,IronSoftware.Drawing.Color,System.Int32)">
+            <summary>
+            Annotates the barcode with text showing it's value.
+            <para>the barcode value is rendered below the barcode.</para></summary>
+            <param name="fontFace">The typeface of the barcode value text.</param>
+            <param name="fontColor">Color of the barcode value text.</param>
+            <param name="textSpacing">The top and bottom spacing for barcode value text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddBarcodeValueTextBelowBarcode(IronSoftware.Drawing.Font,IronSoftware.Drawing.Color,System.Int32,System.Int32)">
+            <summary>
+            Annotates the barcode with text showing it's value.
+            <para>the barcode value is rendered below the barcode.</para></summary>
+            <param name="fontFace">The typeface of the barcode value text.</param>
+            <param name="fontColor">Color of the barcode value text.</param>
+            <param name="topTextSpacing">The top margin of the barcode value text in pixels.</param>
+            <param name="bottomTextSpacing">The bottom of the barcode value text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddAnnotationTextAboveBarcode(System.String)">
+            <summary>
+            Annotates the barcode with any string of text.
+            <para>the text is rendered above the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="annotationText">The annotation text to be displayed.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddAnnotationTextAboveBarcode(System.String,System.Int32)">
+            <summary>
+            Annotates the barcode with any string of text.
+            <para>the text is rendered above the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="annotationText">The annotation text to be displayed.</param>
+            <param name="textSpacing">The top and bottom spacing of the annotation text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddAnnotationTextAboveBarcode(System.String,System.String,System.Int32)">
+            <summary>
+            Annotates the barcode with any string of text.
+            <para>the text is rendered above the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="annotationText">The annotation text to be displayed.</param>
+            <param name="fontPath">Path to the Font of the annotation text. This may be a relative or a full absolute path.</param>
+            <param name="textSpacing">The top and bottom spacing of the annotation text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddAnnotationTextAboveBarcode(System.String,System.Int32,System.Int32)">
+            <summary>
+            Annotates the barcode with any string of text.
+            <para>the text is rendered above the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="annotationText">The annotation text to be displayed.</param>
+            <param name="topTextSpacing">The top margin of the annotation text in pixels.</param>
+            <param name="bottomTextSpacing">The bottom of the annotation text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddAnnotationTextAboveBarcode(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Annotates the barcode with any string of text.
+            <para>the text is rendered above the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="annotationText">The annotation text to be displayed.</param>
+            <param name="fontPath">Path to the Font of the annotation text. This may be a relative or a full absolute path.</param>
+            <param name="topTextSpacing">The top margin of the annotation text in pixels.</param>
+            <param name="bottomTextSpacing">The bottom of the annotation text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddAnnotationTextAboveBarcode(System.String,IronSoftware.Drawing.Font,IronSoftware.Drawing.Color)">
+            <summary>
+            Annotates the barcode with any string of text.
+            <para>the text is rendered above the barcode.</para></summary>
+            <param name="annotationText">The annotation text to be displayed.</param>
+            <param name="fontFace">The typeface of the annotation text.</param>
+            <param name="fontColor">Color of the annotation text.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddAnnotationTextAboveBarcode(System.String,IronSoftware.Drawing.Font,IronSoftware.Drawing.Color,System.Int32)">
+            <summary>
+            Annotates the barcode with any string of text.
+            <para>the text is rendered above the barcode.</para></summary>
+            <param name="annotationText">The annotation text to be displayed.</param>
+            <param name="fontFace">The typeface of the annotation text.</param>
+            <param name="fontColor">Color of the annotation text.</param>
+            <param name="textSpacing">The top and bottom spacing of the annotation text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddAnnotationTextAboveBarcode(System.String,IronSoftware.Drawing.Font,IronSoftware.Drawing.Color,System.String,System.Int32)">
+            <summary>
+            Annotates the barcode with any string of text.
+            <para>the text is rendered above the barcode.</para></summary>
+            <param name="annotationText">The annotation text to be displayed.</param>
+            <param name="fontFace">The typeface of the annotation text.</param>
+            <param name="fontColor">Color of the annotation text.</param>
+            <param name="fontPath">Path to the Font of the annotation text. This may be a relative or a full absolute path.</param>
+            <param name="textSpacing">The top and bottom spacing of the annotation text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddAnnotationTextAboveBarcode(System.String,IronSoftware.Drawing.Font,IronSoftware.Drawing.Color,System.String,System.Int32,System.Int32)">
+            <summary>
+            Annotates the barcode with any string of text.
+            <para>the text is rendered above the barcode.</para></summary>
+            <param name="annotationText">The annotation text to be displayed.</param>
+            <param name="fontFace">The typeface of the annotation text.</param>
+            <param name="fontColor">Color of the annotation text.</param>
+            <param name="fontPath">Path to the Font of the annotation text. This may be a relative or a full absolute path.</param>
+            <param name="topTextSpacing">The top margin of the annotation text in pixels.</param>
+            <param name="bottomTextSpacing">The bottom of the annotation text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddAnnotationTextBelowBarcode(System.String)">
+            <summary>
+            Annotates the barcode with any string of text.
+            <para>the text is rendered below the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="annotationText">The annotation text to be displayed.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddAnnotationTextBelowBarcode(System.String,System.Int32)">
+            <summary>
+            Annotates the barcode with any string of text.
+            <para>the text is rendered below the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="annotationText">The annotation text to be displayed.</param>
+            <param name="textSpacing">The top and bottom spacing of the annotation text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddAnnotationTextBelowBarcode(System.String,System.String,System.Int32)">
+            <summary>
+            Annotates the barcode with any string of text.
+            <para>the text is rendered below the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="annotationText">The annotation text to be displayed.</param>
+            <param name="fontPath">Path to the Font of the annotation text. This may be a relative or a full absolute path.</param>
+            <param name="textSpacing">The top and bottom spacing of the annotation text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddAnnotationTextBelowBarcode(System.String,System.Int32,System.Int32)">
+            <summary>
+            Annotates the barcode with any string of text.
+            <para>the text is rendered below the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="annotationText">The annotation text to be displayed.</param>
+            <param name="topTextSpacing">The top margin of the annotation text in pixels.</param>
+            <param name="bottomTextSpacing">The bottom of the annotation text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddAnnotationTextBelowBarcode(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Annotates the barcode with any string of text.
+            <para>the text is rendered below the barcode.  Overloads of this method allow for the typeface and font size to be specific in detail.</para></summary>
+            <param name="annotationText">The annotation text to be displayed.</param>
+            <param name="fontPath">Path to the Font of the annotation text. This may be a relative or a full absolute path.</param>
+            <param name="topTextSpacing">The top margin of the annotation text in pixels.</param>
+            <param name="bottomTextSpacing">The bottom of the annotation text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddAnnotationTextBelowBarcode(System.String,IronSoftware.Drawing.Font,IronSoftware.Drawing.Color)">
+            <summary>
+            Annotates the barcode with any string of text.
+            <para>the text is rendered below the barcode.</para></summary>
+            <param name="annotationText">The annotation text to be displayed.</param>
+            <param name="fontFace">The typeface of the annotation text.</param>
+            <param name="fontColor">Color of the annotation text.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddAnnotationTextBelowBarcode(System.String,IronSoftware.Drawing.Font,IronSoftware.Drawing.Color,System.Int32)">
+            <summary>
+            Annotates the barcode with any string of text.
+            <para>the text is rendered below the barcode.</para></summary>
+            <param name="annotationText">The annotation text to be displayed.</param>
+            <param name="fontFace">The typeface of the annotation text.</param>
+            <param name="fontColor">Color of the annotation text.</param>
+            <param name="textSpacing">The top and bottom spacing of the annotation text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddAnnotationTextBelowBarcode(System.String,IronSoftware.Drawing.Font,IronSoftware.Drawing.Color,System.String,System.Int32)">
+            <summary>
+            Annotates the barcode with any string of text.
+            <para>the text is rendered below the barcode.</para></summary>
+            <param name="annotationText">The annotation text to be displayed.</param>
+            <param name="fontFace">The typeface of the annotation text.</param>
+            <param name="fontColor">Color of the annotation text.</param>
+            <param name="fontPath">Path to the Font of the annotation text. This may be a relative or a full absolute path.</param>
+            <param name="textSpacing">The top and bottom spacing of the annotation text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="M:IronBarCode.GeneratedBarcode.AddAnnotationTextBelowBarcode(System.String,IronSoftware.Drawing.Font,IronSoftware.Drawing.Color,System.String,System.Int32,System.Int32)">
+            <summary>
+            Annotates the barcode with any string of text.
+            <para>the text is rendered below the barcode.</para></summary>
+            <param name="annotationText">The annotation text to be displayed.</param>
+            <param name="fontFace">The typeface of the annotation text.</param>
+            <param name="fontColor">Color of the annotation text.</param>
+            <param name="fontPath">Path to the Font of the annotation text. This may be a relative or a full absolute path.</param>
+            <param name="topTextSpacing">The top margin of the annotation text in pixels.</param>
+            <param name="bottomTextSpacing">The bottom of the annotation text in pixels.</param>
+            <returns>
+            This instance of <see cref="T:IronBarCode.GeneratedBarcode">GeneratedBarcode</see>.
+            </returns>
+        </member>
+        <member name="T:IronBarCode.IImageFilter">
+            <summary>
+            A collection of <see cref="T:IronBarCode.ImageFilterCollection" /> for processing Images.
+            </summary>
+        </member>
+        <member name="T:IronBarCode.AdaptiveThresholdFilter">
+            <summary>
+            A filter to apply adaptive thresholding to an image.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.AdaptiveThresholdFilter.Threshold">
+            <summary>
+            Threshold limit (0.0-1.0) to consider for binarization. Default = 1.0.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.AdaptiveThresholdFilter.Upper">
+            <summary>
+            The color to use for pixels that are above the threshold. Default = White.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.AdaptiveThresholdFilter.Lower">
+            <summary>
+            The color to use for pixels that are below the threshold. Default = Black.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.AdaptiveThresholdFilter.Rectangle">
+            <summary>
+            Rectangle region to apply the filter on.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.AdaptiveThresholdFilter.#ctor">
+            <summary>
+            Initializes a new instance of the AdaptiveThresholdFilter class.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.AdaptiveThresholdFilter.#ctor(System.Single)">
+            <summary>
+            Initializes a new instance of the AdaptiveThresholdFilter class.
+            </summary>
+            <param name="threshold">Threshold limit (0.0-1.0) to consider for binarization.</param>
+        </member>
+        <member name="M:IronBarCode.AdaptiveThresholdFilter.#ctor(IronSoftware.Drawing.Color,IronSoftware.Drawing.Color,System.Single)">
+            <summary>
+            Initializes a new instance of the AdaptiveThresholdFilter class.
+            </summary>
+            <param name="threshold">Threshold limit (0.0-1.0) to consider for binarization.</param>
+            <param name="upper">The color to use for pixels that are above the threshold.</param>
+            <param name="lower">The color to use for pixels that are below the threshold.</param>
+        </member>
+        <member name="M:IronBarCode.AdaptiveThresholdFilter.#ctor(System.Single,IronSoftware.Drawing.Rectangle)">
+            <summary>
+            Initializes a new instance of the AdaptiveThresholdFilter class.
+            </summary>
+            <param name="threshold">Threshold limit (0.0-1.0) to consider for binarization.</param>
+            <param name="rectangle">Rectangular region to apply the adaptive threshold.</param>
+        </member>
+        <member name="M:IronBarCode.AdaptiveThresholdFilter.#ctor(System.Single,IronSoftware.Drawing.Color,IronSoftware.Drawing.Color,IronSoftware.Drawing.Rectangle)">
+            <summary>
+            Initializes a new instance of the AdaptiveThresholdFilter class.
+            </summary>
+            <param name="threshold">Threshold limit (0.0-1.0) to consider for binarization.</param>
+            <param name="upper">The color to use for pixels that are above the threshold.</param>
+            <param name="lower">The color to use for pixels that are below the threshold.</param>
+            <param name="rectangle">Rectangular region to apply the threshold.</param>
+        </member>
+        <member name="T:IronBarCode.BinaryThresholdFilter">
+            <summary>
+            A filter to binarize an image.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BinaryThresholdFilter.Threshold">
+            <summary>
+            The threshold to apply binarization of the image. Must be between [0.0-1.0]. Default = 0.4.
+            <remarks>With Otsu's method, this value is not used.</remarks></summary>
+        </member>
+        <member name="P:IronBarCode.BinaryThresholdFilter.Upper">
+            <summary>
+            The color to use for pixels that are above the threshold.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BinaryThresholdFilter.Lower">
+            <summary>
+            The color to use for pixels that are below the threshold.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BinaryThresholdFilter.Rectangle">
+            <summary>
+            Rectangle region to apply the filter on.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BinaryThresholdFilter.BinarizationMethod">
+            <summary>
+            Binarization method to use. Default = Otsu's Method.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.BinaryThresholdFilter.#ctor">
+            <summary>
+            Initializes a new instance of the BinaryThresholdFilter class.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.BinaryThresholdFilter.#ctor(System.Single)">
+            <summary>
+            Initializes a new instance of the BinaryThresholdFilter class with the specified threshold.
+            </summary>
+            <param name="threshold">Threshold to apply for binarization. Must be between [0.0-1.0].</param>
+        </member>
+        <member name="M:IronBarCode.BinaryThresholdFilter.#ctor(IronBarCode.Internals.BinarizationMethod)">
+            <summary>
+            Initializes a new instance of the BinaryThresholdFilter class with the specified threshold and binarization method to use.
+            </summary>
+            <param name="binarizationMethod">Binarization method to use.</param>
+        </member>
+        <member name="M:IronBarCode.BinaryThresholdFilter.#ctor(System.Single,IronBarCode.Internals.BinarizationMethod)">
+            <summary>
+            Initializes a new instance of the BinaryThresholdFilter class with the specified threshold and binarization.
+            </summary>
+            <param name="threshold">Threshold to apply for binarization. Must be between [0.0-1.0].</param>
+            <param name="binarizationMethod">Binarization method to use.</param>
+        </member>
+        <member name="M:IronBarCode.BinaryThresholdFilter.#ctor(IronSoftware.Drawing.Color,IronSoftware.Drawing.Color,System.Single)">
+            <summary>
+            Initializes a new instance of the BinaryThresholdFilter class with the specified upper and lower colors, and threshold.
+            </summary>
+            <param name="upper">The color to use for pixels that are above the threshold.</param>
+            <param name="lower">The color to use for pixels that are below the threshold.</param>
+            <param name="threshold">Threshold limit (0.0-1.0) to consider for binarization.</param>
+        </member>
+        <member name="M:IronBarCode.BinaryThresholdFilter.#ctor(IronSoftware.Drawing.Color,IronSoftware.Drawing.Color,System.Single,IronBarCode.Internals.BinarizationMethod)">
+            <summary>
+            Initializes a new instance of the BinaryThresholdFilter class with the specified upper and lower colors, threshold, and binarization method.
+            </summary>
+            <param name="upper">The color to use for pixels that are above the threshold.</param>
+            <param name="lower">The color to use for pixels that are below the threshold.</param>
+            <param name="threshold">Threshold limit (0.0-1.0) to consider for binarization.</param>
+            <param name="binarizationMethod">Binarization method to use.</param>
+        </member>
+        <member name="M:IronBarCode.BinaryThresholdFilter.#ctor(IronSoftware.Drawing.Color,IronSoftware.Drawing.Color,System.Single,IronSoftware.Drawing.Rectangle)">
+            <summary>
+            Initializes a new instance of the BinaryThresholdFilter class with the specified Upper, Lower, Threshold and Rectangle.
+            </summary>
+            <param name="upper">The color to use for pixels that are above the threshold.</param>
+            <param name="lower">The color to use for pixels that are below the threshold.</param>
+            <param name="threshold">Threshold limit (0.0-1.0) to consider for binarization.</param>
+            <param name="rectangle">Rectangle region to apply the filter on.</param>
+        </member>
+        <member name="M:IronBarCode.BinaryThresholdFilter.#ctor(IronSoftware.Drawing.Color,IronSoftware.Drawing.Color,System.Single,IronSoftware.Drawing.Rectangle,IronBarCode.Internals.BinarizationMethod)">
+            <summary>
+            Initializes a new instance of the BinaryThresholdFilter class with the specified upper and lower colors, threshold, rectangle, and binarization method.
+            </summary>
+            <param name="upper">The color to use for pixels that are above the threshold.</param>
+            <param name="lower">The color to use for pixels that are below the threshold.</param>
+            <param name="threshold">Threshold limit (0.0-1.0) to consider for binarization.</param>
+            <param name="rectangle">Rectangle region to apply the filter on.</param>
+            <param name="binarizationMethod">Binarization method to use.</param>
+        </member>
+        <member name="T:IronBarCode.BrightnessFilter">
+            <summary>
+            A filter to adjust image brightness.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BrightnessFilter.Amount">
+            <summary>
+            The proportion of the conversion. Value must be between [-1, 1]. Default = 0.
+            <para>Positive values increase brightness, negative values decrease brightness. A value of 0 leaves the image unchanged.</para></summary>
+        </member>
+        <member name="M:IronBarCode.BrightnessFilter.#ctor">
+            <summary>
+            Initializes a new instance of the BrightnessFilter class.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.BrightnessFilter.#ctor(System.Single)">
+            <summary>
+            Initializes a new instance of the BrightnessFilter class with the specified amount.
+            </summary>
+            <param name="amount">
+            The proportion of the conversion. Value must be between [-1, 1].
+            <para>Positive values increase brightness, negative values decrease brightness. A value of 0 leaves the image unchanged.</para></param>
+        </member>
+        <member name="T:IronBarCode.ContrastFilter">
+            <summary>
+            A filter to adjust image contrast.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.ContrastFilter.Amount">
+            <summary>
+            The proportion of the conversion. Value must be between [0, 10]. Default = 1.0.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.ContrastFilter.#ctor">
+            <summary>
+            Initializes a new instance of the ContrastFilter class.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.ContrastFilter.#ctor(System.Single)">
+            <summary>
+            Initializes a new instance of the ContrastFilter class with the specified amount.
+            </summary>
+            <param name="amount">
+            The proportion of the conversion. Value must be between [0, 10].
+            </param>
+        </member>
+        <member name="T:IronBarCode.InvertFilter">
+            <summary>
+            A filter to invert image colors.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.InvertFilter.Rectangle">
+            <summary>
+            Rectangle region to apply the filter on.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.InvertFilter.#ctor">
+            <summary>
+            Initializes a new instance of the InvertFilter class.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.InvertFilter.#ctor(IronSoftware.Drawing.Rectangle)">
+            <summary>
+            Initializes a new instance of the InvertFilter class with a specified Rectangle region.
+            </summary>
+            <param name="rectangle">Rectangle region to apply the filter on.</param>
+        </member>
+        <member name="T:IronBarCode.SharpenFilter">
+            <summary>
+            A filter to apply Gaussian sharpening to an image.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.SharpenFilter.Sigma">
+            <summary>
+            The 'Sigma' value representing the weight of the blur to remove. Default = 3.0f.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.SharpenFilter.#ctor">
+            <summary>
+            Initializes a new instance of the SharpenFilter class.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.SharpenFilter.#ctor(System.Single)">
+            <summary>
+            Initializes a new instance of the SharpenFilter class with the specified Sigma.
+            </summary>
+            <param name="sigma">The 'Sigma' value representing the weight of the blur.</param>
+        </member>
+        <member name="T:IronBarCode.GaussianBlurFilter">
+            <summary>
+            A filter to apply Gaussian blur to an image.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.GaussianBlurFilter.KernelWidth">
+            <summary>
+            Width of the kernel to apply Gaussian blur. Must be an odd value greater than 0. Default = 3.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.GaussianBlurFilter.KernelHeight">
+            <summary>
+            Height of the kernel to apply Gaussian blur. Must be an odd value greater than 0. Default = 3.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.GaussianBlurFilter.Sigma">
+            <summary>
+            The 'Sigma' value representing the weight of the blur. Default = 3.0f.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.GaussianBlurFilter.#ctor">
+            <summary>
+            Initializes a new instance of the GaussianBlurFilter class.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.GaussianBlurFilter.#ctor(System.Single)">
+            <summary>
+            Initializes a new instance of the GaussianBlurFilter class.
+            </summary>
+            <param name="sigma">The 'Sigma' value representing the weight of the blur.</param>
+        </member>
+        <member name="M:IronBarCode.GaussianBlurFilter.#ctor(System.Int32,System.Int32,System.Single)">
+            <summary>
+            Initializes a new instance of the GaussianBlurFilter class.
+            </summary>
+            <param name="kernelWidth">Width of the kernel to apply Gaussian blur.</param>
+            <param name="kernelHeight">Height of the kernel to apply Gaussian blur.</param>
+            <param name="sigma">The 'Sigma' value representing the weight of the blur.</param>
+        </member>
+        <member name="T:IronBarCode.MedianBlurFilter">
+            <summary>
+            A filter to apply Median blur to an image.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.MedianBlurFilter.KernelSize">
+            <summary>
+            Size of the kernel to apply Median blur. Must be an odd value greater than 0. Default = 5.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.MedianBlurFilter.#ctor">
+            <summary>
+            Initializes a new instance of the MedianBlurFilter class.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.MedianBlurFilter.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the MedianBlurFilter class.
+            </summary>
+            <param name="kernelSize">Size of the kernel to apply Median blur.</param>
+        </member>
+        <member name="T:IronBarCode.BilateralFilter">
+            <summary>
+            A filter to apply bilateral smoothing to an image.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BilateralFilter.NeighborhoodDiameter">
+            <summary>
+            Diameter of the pixel neighborhood used for filtering. Default = 5.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BilateralFilter.SigmaColor">
+            <summary>
+            'Sigma' value representing the "weight" of how pixels will influence each other, based on color. Default = 75.0.
+            <remarks>A higher value means colors that colors that are more different will influence each other more.</remarks></summary>
+        </member>
+        <member name="P:IronBarCode.BilateralFilter.SigmaSpace">
+            <summary>
+            'Sigma' value representing the "weight" of how pixels will influence each other, based on distance. Default = 75.0.
+            <remarks>A higher value means that pixels that are farther apart will influence each other more.</remarks></summary>
+        </member>
+        <member name="M:IronBarCode.BilateralFilter.#ctor">
+            <summary>
+            Initializes a new instance of the BilateralFilter class.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.BilateralFilter.#ctor(System.Int32,System.Single,System.Single)">
+            <summary>
+            Initializes a new instance of the BilateralFilter class.
+            </summary>
+            <param name="neighborhoodDiameter">Diameter of the pixel neighborhood used for filtering.</param>
+            <param name="sigmaColor">'Sigma' value representing the "weight" of how pixels will influence each other, based on color.</param>
+            <param name="sigmaSpace">'Sigma' value representing the "weight" of how pixels will influence each other, based on distance.</param>
+        </member>
+        <member name="T:IronBarCode.ImageFilterCollection">
+            <summary>
+            A collection of image filters for image pre-processing.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.ImageFilterCollection.CacheAtEachIteration">
+            <summary>
+            Cache the image with the filters applied in each iteration of the filter applying. Default = false.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.ImageFilterCollection.#ctor">
+            <summary>
+            Initializes a new instance of the ImageFilterCollection class.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.ImageFilterCollection.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of the ImageFilterCollection class with a CacheAtEachIteration toggle.
+            </summary>
+            <param name="cacheAtEachIteration" />
+        </member>
+        <member name="T:IronBarCode.BarcodeEncoding">
+            <summary>
+            Barcode Encoding Types.
+            <para>Setting a <see cref="T:IronBarCode.BarcodeEncoding" /> when reading Barcodes improves performance by only looking for expected barcode types.</para><para>Setting a <see cref="T:IronBarCode.BarcodeEncoding" /> when rendering Barcodes chooses the type and design of barcode to be generated.  For barcode creation please also see the <see cref="T:IronBarCode.BarcodeWriterEncoding" /> Enum which omits barcode formats which are not writable with IronBarCode.</para></summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.None">
+            <summary>
+            Represents invalid barcode format or absence of one.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.Aztec">
+            <summary>
+            Aztec 2D barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.Codabar">
+            <summary>
+            Codabar 1D barcode format.
+            <para>Please note: Codabar encodes numerical data (digits) only.</para></summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.Code39">
+            <summary>
+            Code 39 1D barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.Code93">
+            <summary>
+            Code 93 1D barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.Code128">
+            <summary>
+            Code 128 1D format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.Databar">
+            <summary>
+            GS1 Databar 1D barcode format. Formerly known as RSS-14.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.DatabarExpanded">
+            <summary>
+            GS1 Data Expanded 1D barcode format. Formerly known as RSS Expanded.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.DataMatrix">
+            <summary>
+            Data Matrix 2D barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.EAN8">
+            <summary>
+            EAN-8 1D barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.EAN13">
+            <summary>
+            EAN-13 1D barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.ITF">
+            <summary>
+            Interleaved Two of Five (ITF) 1D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.MaxiCode">
+            <summary>
+            Maxicode 2D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.PDF417">
+            <summary>
+            PDF417 2D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.QRCode">
+            <summary>
+            QR Code 2D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.UPCA">
+            <summary>
+            UPC-A 1D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.UPCE">
+            <summary>
+            UPC-E 1D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.MicroQRCode">
+            <summary>
+            Micro QR Code 2D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.RMQRCode">
+            <summary>
+            Rectangular Micro QR Code (rMQR) 2D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.Plessey">
+            <summary>
+            Plessey 1D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.MSI">
+            <summary>
+            MSI (a.k.a Modified Plessey) 1D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.IntelligentMail">
+            <summary>
+            Intelligent Mail 1D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.Code128GS1">
+            <summary>
+            Code 128 GS1 1D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.AllOneDimensional">
+            <summary>
+            Read all one-dimensional (linear) types of Barcodes, including stacked one-dimensional barcodes.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.AllTwoDimensional">
+            <summary>
+            Read all two-dimensional types of barcodes (grid, matrix and stacked).
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeEncoding.All">
+            <summary>
+            Read any type of Barcode within the <see cref="T:IronBarCode.BarcodeEncoding" /> enum.
+            </summary>
+        </member>
+        <member name="T:IronBarCode.BarcodeWriterEncoding">
+            <summary>
+            Chooses the style of barcode to render as an image using IronBarCode.
+            This enum is related to <see cref="T:IronBarCode.BarcodeEncoding" /> with the exception that only encodable barcode formats are mentioned.  As this Enum is not of the Flags type, only one  <see cref="T:IronBarCode.BarcodeWriterEncoding" /> can be used to generate a barcode.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.Aztec">
+            <summary>
+            Aztec 2D barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.Codabar">
+            <summary>
+            Codabar 1D barcode format.
+            <para>Please note: Codabar encodes numerical data (digits) only.</para></summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.Code39">
+            <summary>
+            Code 39 1D barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.Code93">
+            <summary>
+            Code 93 1D barcode format.
+            <para>Code 93 supports encoding with only the following ASCII characters: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 - . $ / + % SPACE</para></summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.Code128">
+            <summary>
+            Code 128 1D format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.DataBar">
+            <summary>
+            GS1 Databar 1D barcode format. Formerly known as RSS-14.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.DataBarExpanded">
+            <summary>
+            GS1 Data Expanded 1D barcode format. Formerly known as RSS Expanded.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.DataMatrix">
+            <summary>
+            Data Matrix 2D barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.EAN8">
+            <summary>
+            EAN-8 1D barcode format.
+            <para>Please Note: EAN-8 may only encode numerical (digits) content of length 7 or 8 digits long. Shorter Barcodes will have trailing zeros (000) prepended to the start of the number automatically.</para></summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.EAN13">
+            <summary>
+            EAN-13 1D barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.ITF">
+            <summary>
+            Interleaved Two of Five (ITF) 1D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.MaxiCode">
+            <summary>
+            Maxicode 2D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.PDF417">
+            <summary>
+            PDF417 2D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.QRCode">
+            <summary>
+            QR Code 2D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.UPCA">
+            <summary>
+            UPC-A 1D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.UPCE">
+            <summary>
+            UPC-E 1D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.MicroQRCode">
+            <summary>
+            Micro QR Code 2D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.RMQRCode">
+            <summary>
+            Rectangular Micro QR Code (rMQR) 2D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.Plessey">
+            <summary>
+            Plessey 1D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.MSI">
+            <summary>
+            MSI (a.k.a Modified Plessey) 1D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.IntelligentMail">
+            <summary>
+            Intelligent Mail 1D Barcode format.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeWriterEncoding.Code128GS1">
+            <summary>
+            Code 128 GS1 1D Barcode format.
+            </summary>
+        </member>
+        <member name="T:IronBarCode.BarCodeAspectSide">
+            <summary>
+            Chooses the side of barcode to keep aspect size using IronBarCode.
+            This enum is related to <see cref="T:IronBarCode.BarCodeAspectSide" /> with the side to keep.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarCodeAspectSide.Horizontal">
+            <summary>
+            Keep width to the default ratio and will stretch height.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarCodeAspectSide.Vertical">
+            <summary>
+            Keep height to the default ratio and will stretch width.
+            </summary>
+        </member>
+        <member name="T:IronBarCode.Internals.BinarizationMethod">
+            <summary>
+            Methods for binarizing images.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.Internals.BinarizationMethod.Simple">
+            <summary>
+            Simple binarization based on a threshold value.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.Internals.BinarizationMethod.Otsu">
+            <summary>
+            Otsu's method for binarization.
+            </summary>
+        </member>
+        <member name="T:IronBarCode.NamespaceDoc">
+            <summary>
+            IronBarCode is a .NET library allowing developers to read and generate barcodes.
+            IronBarCode supports a wide range of 1 and 2 dimensional barcodes including decorated (branded) QR codes. 
+            <para>https://ironsoftware.com/csharp/barcode/</para></summary>
+        </member>
+        <member name="T:IronBarCode.Installation">
+            <summary>
+            A directory with write-access where setup and temporary files and will be deployed when necessary.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.Installation.DeploymentPath">
+            <summary>
+            A directory with write-access where setup and temporary files and will be deployed when necessary. The default location is the system temp folder which is appropriate for most use cases
+            </summary>
+        </member>
+        <member name="T:IronBarCode.License">
+            <summary>
+             Allows IronBarCode license keys to be applied globally across an 
+             application.
+             </summary>
+        </member>
+        <member name="P:IronBarCode.License.IsLicensed">
+            <summary>
+            Determines whether this instance of IronBarCode is Licensed.
+            <para>Will return <c>false</c> unless a <see cref="P:IronBarCode.License.LicenseKey" />
+            is set to a valid trial or full license key in 
+            <see cref="P:IronBarCode.License.LicenseKey" /> property, <c>Web.Config</c>,
+            <c>App.Config</c> or <c>appsettings.json</c> in .Net Core.
+            </para><para>
+            See https://ironsoftware.com/csharp/barcode/licensing/ and 
+            https://ironsoftware.com/csharp/barcode/docs/license/license-keys/
+            </para></summary>
+            <returns>
+                <c>true</c> if the license key given is valid.</returns>
+        </member>
+        <member name="P:IronBarCode.License.LicenseKey">
+            <summary>
+            Get Licensed at https://ironsoftware.com/csharp/barcode/licensing/
+            <para>
+            For .Net framework applications, a license key can alternatively be
+            added to <c>Web.Config</c> or <c>App.Config</c> XML file using
+            <c>&lt;add key="IronBarCode.LicenseKey" value="IRONBARCODE-LICENSE-KEY"/&gt;</c>
+            within the appSettings node.
+            See https://ironsoftware.com/csharp/barcode/docs/license/license-keys/
+            </para><para>
+            For .Net Core applications, a license key  may be added to 
+            <c>appsettings.json</c> where the key name is <c>"IronBarCode.LicenseKey"</c>
+            and the value is a valid IronBarCode trial or full license key.
+            </para><para>
+            See https://ironsoftware.com/csharp/barcode/licensing/ for licensing 
+            options.
+            </para></summary>
+        </member>
+        <member name="M:IronBarCode.License.IsValidLicense(System.String)">
+            <summary>
+            Determines whether a string license key is valid.
+            <para>
+            See https://ironsoftware.com/csharp/barcode/licensing/ for trial,
+            development and commercial deployment licensing options.
+            </para></summary>
+            <param name="licenseKey">IronBarCode license key as a string</param>
+            <returns>
+                <c>true</c> if the license key given is valid.</returns>
+        </member>
+        <member name="M:IronBarCode.License.DisableAppAnalytics">
+            <summary>
+            Disables AppAnalytics for IronBarCode. Limitations apply.
+            </summary>
+        </member>
+        <member name="T:IronBarCode.BarcodeReaderOptions">
+            <summary>
+            An Options class of <see cref="T:IronBarCode.BarcodeReader" /> for reading many popular barcode formats from Images and PDFs.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.BarcodeReaderOptions.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:IronBarCode.BarcodeReader" /> class.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeReaderOptions.Speed">
+            <summary>
+            Barcode reading speed. Default = Balanced.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeReaderOptions.ExpectMultipleBarcodes">
+            <summary>
+            If set to <c>false</c> the barcode reader will stop scanning a given image once a barcode has been found to increase performance. Default = true.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeReaderOptions.ExpectBarcodeTypes">
+            <summary>
+            The barcode encoding types to read from the InputImage. By default all supported barcodes types are scanned for.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeReaderOptions.Multithreaded">
+            <summary>
+            Reads barcodes from multiple images in parallel.  Multiple threads will automatically be started and managed to improve performance for batch barcode reading tasks.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeReaderOptions.MaxParallelThreads">
+            <summary>
+            Max Threads for parallel. Default 4
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeReaderOptions.CropArea">
+            <summary>
+            The area of each image frame in which to scan for barcodes. A <see cref="T:IronSoftware.Drawing.Rectangle" /> measured in pixels.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeReaderOptions.UseCode39ExtendedMode">
+            <summary>
+            If a Code39 barcode is detected, use the extended mode for the full ASCII character set.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeReaderOptions.RemoveFalsePositive">
+            <summary>
+            Attempt to remove false positive barcode reads. This can be disabled to improve performance at the cost of accuracy. Default = true.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeReaderOptions.ImageFilters">
+            <summary>
+            A collection of image filters for image pre-processing.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeReaderOptions.ScanMode">
+            <summary>
+            Define how IronBarcode scans and detects barcodes in an image to read.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeReaderOptions.ConfidenceThreshold">
+            <summary>
+            Minimum confidence level for ML model detection to be considered valid. 
+            The value is between (0.0, 1.0). Default value is 0.7
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeReaderOptions.AutoRotate">
+            <summary>
+            Toggle whether to automatically rotate barcodes or not in an ML detection. Default = true.
+            </summary>
+        </member>
+        <member name="T:IronBarCode.BarcodeResult">
+            <summary>
+            Result from reading a barcode using IronBarCode
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeResult.BarcodeType">
+            <summary>
+            The <see cref="T:IronBarCode.BarcodeEncoding" /> (barcode type) which was detected
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeResult.Value">
+            <summary>
+            The value of the barcode as a string.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeResult.Text">
+            <summary>
+            The value of the barcode as a string. Synonym for BarcodeResult.Value
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeResult.BarcodeImage">
+            <summary>
+            An image of the scanned barcode image as a <see cref="T:IronSoftware.Drawing.AnyBitmap" />.
+            <para>This <see cref="T:IronSoftware.Drawing.AnyBitmap" /> will be disposed when the BarcodeResult finalizes.  If you wish to keep a permanent copy of the <see cref="P:IronBarCode.BarcodeResult.BarcodeImage" /> use the <c>(Bitmap)BarcodeResult.BarcodeImage.Clone()</c> method.</para></summary>
+            <value>
+            An image of the barcode which was read.  
+            </value>
+        </member>
+        <member name="P:IronBarCode.BarcodeResult.BinaryValue">
+            <summary>
+            The binary value of the barcode as a byte array.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeResult.Width">
+            <summary>
+            A Barcode Width
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeResult.Height">
+            <summary>
+            A Barcode Height
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeResult.PageNumber">
+            <summary>
+            The page number of the PDF or Image in which the barcode was discovered.
+            <remarks>The page numbers are 1-based indexed, meaning the first page is '1' rather than '0'.</remarks></summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeResult.Rotation">
+            <summary>
+            Clockwise rotation of the barcode from a horizontal position. Setting AutoRotate to true in <see cref="T:IronBarCode.BarcodeReaderOptions" /> gives the angle in multiples of 15,
+            while setting it to false gives it in multiples of 90. Null signifies the orientation was not found.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeResult.PageOrientation">
+            <summary>
+            A Page orientation of input image.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.BarcodeResult.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents the value of the barcode as a string;
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="P:IronBarCode.BarcodeResult.Points">
+            <summary>
+            Points defining the corners of the detected barcode code.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.BarcodeResult.Url">
+            <summary>
+            Gets the URI if the Value is a valid URI.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.BarcodeResult.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:IronBarCode.BarcodeResults" /> class.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.BarcodeResult.#ctor(IronSoftware.Drawing.PointF[],System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:IronBarCode.BarcodeResults" /> class.
+            </summary>
+            <param name="points" />
+            <param name="value" />
+        </member>
+        <member name="T:IronBarCode.BarcodeResultPosition">
+            <summary>
+            Represents the position of the detected barcode code in the image.
+            </summary>
+        </member>
+        <member name="F:IronBarCode.BarcodeResultPosition.Points">
+            <summary>
+            An array of points that define the position.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.BarcodeResultPosition.#ctor(IronSoftware.Drawing.PointF[])">
+            <summary>
+            Initializes a new instance of the BarcodeResultPosition structure.
+            </summary>
+            <param name="points">An array of points that define the position.</param>
+        </member>
+        <member name="T:IronBarCode.BarcodeResults">
+            <summary>
+            Result from reading a barcode as IList using IronBarCode
+            </summary>
+        </member>
+        <member name="M:IronBarCode.BarcodeResults.#ctor(System.Collections.Generic.IEnumerable{IronBarCode.BarcodeResult},IronBarCode.BarcodeReaderOptions)">
+            <summary>
+            Create a new barcode result collection from the specified enumerable
+            </summary>
+            <param name="Barcodes">Barcodes to add</param>
+            <param name="options">Barcode options</param>
+        </member>
+        <member name="M:IronBarCode.BarcodeResults.Values">
+            <summary>
+            Return all values of the collection of BarcodeResult.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.BarcodeResults.FilterImages">
+            <summary>
+            Return all images that applies the filter.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.BarcodeResults.ExportFilterImagesToDisk(System.String)">
+            <summary>
+            Export the processed image from a collection of ImageFilter to the specified file.
+            </summary>
+            <param name="filename">A string that contains the name of the file to which to save this Image.</param>
+        </member>
+        <member name="T:IronBarCode.PdfBarcodeReaderOptions">
+            <summary>
+            An Options class of <see cref="T:IronBarCode.PdfBarcodeReaderOptions" /> for reading many popular barcode formats from PDFs.
+            <param>Features: MaxParallelThreads, Reading detail, ExpectMultipleBarcodes, Crop-area, Image filters and preprocessing for improved accuracy.</param></summary>
+        </member>
+        <member name="M:IronBarCode.PdfBarcodeReaderOptions.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:IronBarCode.PdfBarcodeReaderOptions" /> class.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.PdfBarcodeReaderOptions.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:IronBarCode.PdfBarcodeReaderOptions" /> class with the specified page.
+            </summary>
+            <param name="pageNumber">The page number of the PDF.</param>
+        </member>
+        <member name="M:IronBarCode.PdfBarcodeReaderOptions.#ctor(System.Collections.Generic.IEnumerable{System.Int32})">
+            <summary>
+            Initializes a new instance of the <see cref="T:IronBarCode.PdfBarcodeReaderOptions" /> class with the specified pages.
+            </summary>
+            <param name="pageNumbers">The page numbers of the PDF.</param>
+        </member>
+        <member name="P:IronBarCode.PdfBarcodeReaderOptions.Password">
+            <summary>
+            The password string to open / unencrypt the PDF. Null or "" assign no password.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.PdfBarcodeReaderOptions.PageNumbers">
+            <summary>
+            The page numbers of the PDF to read expressed as an Array, List or IEnumerable of <see cref="T:System.Int32" />. PageNumbers are '1 based' meaning that the first page number is 1 rather than zero.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.PdfBarcodeReaderOptions.DPI">
+            <summary>
+            The Dots per inch to rendering each Barcode images.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.PdfBarcodeReaderOptions.Scale">
+            <summary>
+            The Scale Factor for Scaling Width and Height when convert Pdf to Image. Default 3.5.
+            </summary>
+        </member>
+        <member name="T:IronBarCode.QRCodeLogo">
+            <summary>
+            A class allowing for advanced control on the logo of QR type barcodes.
+            <para><see cref="T:IronBarCode.QRCodeLogo">QRCodeLogo</see> gives the developer access to set logo image, logo width, logo height, and rounded logo corner.</para><para>Logo image can be provide as <see cref="T:IronSoftware.Drawing.AnyBitmap" />, Files, Array of <see cref="T:System.Byte" /> and <see cref="T:System.IO.Stream" />.</para></summary>
+        </member>
+        <member name="P:IronBarCode.QRCodeLogo.LogoWidth">
+            <summary>
+            Desired width of Logo in px. If zero (default) IronBarcode will automatically maximize the size of your logo for you.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.QRCodeLogo.LogoHeight">
+            <summary>
+            Desired height of Logo in px. If zero (default) IronBarcode will automatically maximize the size of your logo for you.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.QRCodeLogo.RoundedCornerRadius">
+            <summary>
+            Desired rounding of Logo corners for design purposes. If zero (default) IronBarcode not round the corners of your logo.
+            </summary>
+        </member>
+        <member name="P:IronBarCode.QRCodeLogo.Logo">
+            <summary>
+            Image Logo to stamp onto a QR code as a <see cref="T:IronSoftware.Drawing.AnyBitmap" /></summary>
+        </member>
+        <member name="M:IronBarCode.QRCodeLogo.#ctor">
+            <summary>
+            Creates a Logo to stamp onto a QR code. File formats acceptable include: Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.
+            </summary>
+        </member>
+        <member name="M:IronBarCode.QRCodeLogo.#ctor(IronSoftware.Drawing.AnyBitmap,System.Int32,System.Single)">
+            <summary>
+            Creates a Logo to stamp onto a QR code. File formats acceptable include: Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.
+            </summary>
+            <param name="logoImage">The logo image as a <see cref="T:IronSoftware.Drawing.AnyBitmap" />. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="size">The desired width and height of the logo image in pixels. If this image is too large for the QR to be readable and exception will be thrown. Use the value 0 (zero) to automatically find the largest viable size.</param>
+            <param name="roundedCornerRadius">The radius of the rounded corner of the logo image. Use the default value 0 (zero) for square corners.</param>
+        </member>
+        <member name="M:IronBarCode.QRCodeLogo.#ctor(IronSoftware.Drawing.AnyBitmap,System.Int32,System.Int32,System.Single)">
+            <summary>
+            Creates a Logo to stamp onto a QR code. File formats acceptable include: Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.
+            </summary>
+            <param name="logoImage">The logo image as a <see cref="T:IronSoftware.Drawing.AnyBitmap" />. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="width">The width of the logo image in pixels. Use the default value 0 (zero) to automatically find the largest viable size.</param>
+            <param name="height">The height of the logo image in pixels. Use the default value 0 (zero) to automatically find the largest viable size.</param>
+            <param name="roundedCornerRadius">The radius of the rounded corner of the logo image. Use the default value 0 (zero) for square corners.</param>
+        </member>
+        <member name="M:IronBarCode.QRCodeLogo.#ctor(System.IO.Stream,System.Int32,System.Single)">
+            <summary>
+            Creates a Logo to stamp onto a QR code. File formats acceptable include: Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.
+            </summary>
+            <param name="stream">The logo image as a <see cref="T:IronSoftware.Drawing.AnyBitmap" />. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="size">The desired width and height of the logo image in pixels. If this image is too large for the QR to be readable and exception will be thrown. Use the value 0 (zero) to automatically find the largest viable size.</param>
+            <param name="roundedCornerRadius">The radius of the rounded corner of the logo image. Use the default value 0 (zero) for square corners.</param>
+        </member>
+        <member name="M:IronBarCode.QRCodeLogo.#ctor(System.IO.Stream,System.Int32,System.Int32,System.Single)">
+            <summary>
+            Creates a Logo to stamp onto a QR code.  File formats acceptable include: Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.
+            </summary>
+            <param name="stream">The logo image as a <see cref="T:System.IO.Stream" />. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="width">The width of the logo image in pixels. Use the default value 0 (zero) to automatically find the largest viable size.</param>
+            <param name="height">The height of the logo image in pixels. Use the default value 0 (zero) to automatically find the largest viable size.</param>
+            <param name="roundedCornerRadius">The radius of the rounded corner of the logo image. Use the default value 0 (zero) for square corners.</param>
+        </member>
+        <member name="M:IronBarCode.QRCodeLogo.#ctor(System.Byte[],System.Int32,System.Single)">
+            <summary>
+            Creates a Logo to stamp onto a QR code. File formats acceptable include: Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.
+            </summary>
+            <param name="bytes">The logo image as a array of <see cref="T:System.Byte" />. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="size">The desired width and height of the logo image in pixels. If this image is too large for the QR to be readable and exception will be thrown. Use the value 0 (zero) to automatically find the largest viable size.</param>
+            <param name="roundedCornerRadius">The radius of the rounded corner of the logo image. Use the default value 0 (zero) for square corners.</param>
+        </member>
+        <member name="M:IronBarCode.QRCodeLogo.#ctor(System.Byte[],System.Int32,System.Int32,System.Single)">
+            <summary>
+            Creates a Logo to stamp onto a QR code. File formats acceptable include: Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.
+            </summary>
+            <param name="bytes">The logo image as a array of <see cref="T:System.Byte" />. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="width">The width of the logo image in pixels. Use the default value 0 (zero) to automatically find the largest viable size.</param>
+            <param name="height">The height of the logo image in pixels. Use the default value 0 (zero) to automatically find the largest viable size.</param>
+            <param name="roundedCornerRadius">The radius of the rounded corner of the logo image. Use the default value 0 (zero) for square corners.</param>
+        </member>
+        <member name="M:IronBarCode.QRCodeLogo.#ctor(System.String,System.Int32,System.Single)">
+            <summary>
+            Creates a Logo to stamp onto a QR code. File formats acceptable include: Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.
+            </summary>
+            <param name="filepath">The logo image as a full or relative filepath. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="size">The desired width and height of the logo image in pixels. If this image is too large for the QR to be readable and exception will be thrown. Use the value 0 (zero) to automatically find the largest viable size.</param>
+            <param name="roundedCornerRadius">The radius of the rounded corner of the logo image. Use the default value 0 (zero) for square corners.</param>
+        </member>
+        <member name="M:IronBarCode.QRCodeLogo.#ctor(System.String,System.Int32,System.Int32,System.Single)">
+            <summary>
+            Creates a Logo to stamp onto a QR code. File formats acceptable include: Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.
+            </summary>
+            <param name="filepath">The logo image as a full or relative filepath. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="width">The width of the logo image in pixels. Use the default value 0 (zero) to automatically find the largest viable size.</param>
+            <param name="height">The height of the logo image in pixels. Use the default value 0 (zero) to automatically find the largest viable size.</param>
+            <param name="roundedCornerRadius">The radius of the rounded corner of the logo image. Use the default value 0 (zero) for square corners.</param>
+        </member>
+        <member name="M:IronBarCode.QRCodeLogo.#ctor(System.Uri,System.Int32,System.Single)">
+            <summary>
+            Creates a Logo to stamp onto a QR code. File formats acceptable include: Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.
+            </summary>
+            <param name="URI">The logo image as a <see cref="T:System.Uri" />. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="size">The desired width and height of the logo image in pixels. If this image is too large for the QR to be readable and exception will be thrown. Use the value 0 (zero) to automatically find the largest viable size.</param>
+            <param name="roundedCornerRadius">The radius of the rounded corner of the logo image. Use the default value 0 (zero) for square corners.</param>
+        </member>
+        <member name="M:IronBarCode.QRCodeLogo.#ctor(System.Uri,System.Int32,System.Int32,System.Single)">
+            <summary>
+            Creates a Logo to stamp onto a QR code. File formats acceptable include: Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.
+            </summary>
+            <param name="URI">The logo image as a <see cref="T:System.Uri" />. Jpeg, Jpeg2000, Png, Bmp, Tiff &amp; Gif Image formats are supported.</param>
+            <param name="width">The width of the logo image in pixels. Use the default value 0 (zero) to automatically find the largest viable size.</param>
+            <param name="height">The height of the logo image in pixels. Use the default value 0 (zero) to automatically find the largest viable size.</param>
+            <param name="roundedCornerRadius">The radius of the rounded corner of the logo image. Use the default value 0 (zero) for square corners.</param>
+        </member>
+        <member name="T:IronBarCode.ReaderInternals.ReaderClient">
+            <summary>
+            Client layer for ReaderInternals interop
+            </summary>
+        </member>
+        <member name="P:IronBarCode.ReaderInternals.ReaderClient.Instance">
+            <summary>
+            ReaderClient instance
+            </summary>
+        </member>
+    </members>
+</doc>

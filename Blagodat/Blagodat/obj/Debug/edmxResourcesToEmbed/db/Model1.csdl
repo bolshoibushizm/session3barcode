@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BlogodatKIAModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BlogodatKIAEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Client" EntityType="BlogodatKIAModel.Client" />
+    <EntitySet Name="Employee" EntityType="BlogodatKIAModel.Employee" />
+    <EntitySet Name="History" EntityType="BlogodatKIAModel.History" />
+    <EntitySet Name="Order" EntityType="BlogodatKIAModel.Order" />
+    <EntitySet Name="Role" EntityType="BlogodatKIAModel.Role" />
+    <EntitySet Name="Service" EntityType="BlogodatKIAModel.Service" />
+    <EntitySet Name="Status" EntityType="BlogodatKIAModel.Status" />
+    <EntitySet Name="sysdiagrams" EntityType="BlogodatKIAModel.sysdiagrams" />
+    <AssociationSet Name="FK_Order_Client" Association="BlogodatKIAModel.FK_Order_Client">
+      <End Role="Client" EntitySet="Client" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Role" Association="BlogodatKIAModel.FK_Employee_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="Employee" EntitySet="Employee" />
+    </AssociationSet>
+    <AssociationSet Name="FK_History_Employee" Association="BlogodatKIAModel.FK_History_Employee">
+      <End Role="Employee" EntitySet="Employee" />
+      <End Role="History" EntitySet="History" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Order_Status" Association="BlogodatKIAModel.FK_Order_Status">
+      <End Role="Status" EntitySet="Status" />
+      <End Role="Order" EntitySet="Order" />
+    </AssociationSet>
+    <AssociationSet Name="OrderService" Association="BlogodatKIAModel.OrderService">
+      <End Role="Order" EntitySet="Order" />
+      <End Role="Service" EntitySet="Service" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Client">
+    <Key>
+      <PropertyRef Name="ClientCode" />
+    </Key>
+    <Property Name="ClientCode" Type="Int32" Nullable="false" />
+    <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Patronymic" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Passport" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Birthday" Type="DateTime" Precision="0" />
+    <Property Name="Adress" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Order" Relationship="BlogodatKIAModel.FK_Order_Client" FromRole="Client" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Login" />
+    </Key>
+    <Property Name="Login" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Patronymic" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IDRole" Type="Int32" />
+    <Property Name="Photo" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Role" Relationship="BlogodatKIAModel.FK_Employee_Role" FromRole="Employee" ToRole="Role" />
+    <NavigationProperty Name="History" Relationship="BlogodatKIAModel.FK_History_Employee" FromRole="Employee" ToRole="History" />
+  </EntityType>
+  <EntityType Name="History">
+    <Key>
+      <PropertyRef Name="IDHIistory" />
+    </Key>
+    <Property Name="IDHIistory" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserLogin" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LastDate" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="EnterType" Type="String" Nullable="false" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Employee" Relationship="BlogodatKIAModel.FK_History_Employee" FromRole="History" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="IDOrder" />
+    </Key>
+    <Property Name="IDOrder" Type="Int32" Nullable="false" />
+    <Property Name="OrderCode" Type="String" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Name="DateCreated" Type="DateTime" Precision="0" />
+    <Property Name="OrderTime" Type="Time" Precision="7" />
+    <Property Name="ClientCode" Type="Int32" />
+    <Property Name="IDStatus" Type="Int32" />
+    <Property Name="CloseDate" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Client" Relationship="BlogodatKIAModel.FK_Order_Client" FromRole="Order" ToRole="Client" />
+    <NavigationProperty Name="Status" Relationship="BlogodatKIAModel.FK_Order_Status" FromRole="Order" ToRole="Status" />
+    <NavigationProperty Name="Service" Relationship="BlogodatKIAModel.OrderService" FromRole="Order" ToRole="Service" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="IDRole" />
+    </Key>
+    <Property Name="IDRole" Type="Int32" Nullable="false" />
+    <Property Name="NameRole" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Employee" Relationship="BlogodatKIAModel.FK_Employee_Role" FromRole="Role" ToRole="Employee" />
+  </EntityType>
+  <EntityType Name="Service">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="NameService" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="CodeService" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="PriceHour" Type="Int32" />
+    <NavigationProperty Name="Order" Relationship="BlogodatKIAModel.OrderService" FromRole="Service" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="Status">
+    <Key>
+      <PropertyRef Name="IDStatus" />
+    </Key>
+    <Property Name="IDStatus" Type="Int32" Nullable="false" />
+    <Property Name="Status1" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Order" Relationship="BlogodatKIAModel.FK_Order_Status" FromRole="Status" ToRole="Order" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <Association Name="FK_Order_Client">
+    <End Type="BlogodatKIAModel.Client" Role="Client" Multiplicity="0..1" />
+    <End Type="BlogodatKIAModel.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Client">
+        <PropertyRef Name="ClientCode" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="ClientCode" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Role">
+    <End Type="BlogodatKIAModel.Role" Role="Role" Multiplicity="0..1" />
+    <End Type="BlogodatKIAModel.Employee" Role="Employee" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="IDRole" />
+      </Principal>
+      <Dependent Role="Employee">
+        <PropertyRef Name="IDRole" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_History_Employee">
+    <End Type="BlogodatKIAModel.Employee" Role="Employee" Multiplicity="1" />
+    <End Type="BlogodatKIAModel.History" Role="History" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Employee">
+        <PropertyRef Name="Login" />
+      </Principal>
+      <Dependent Role="History">
+        <PropertyRef Name="UserLogin" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Order_Status">
+    <End Type="BlogodatKIAModel.Status" Role="Status" Multiplicity="0..1" />
+    <End Type="BlogodatKIAModel.Order" Role="Order" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Status">
+        <PropertyRef Name="IDStatus" />
+      </Principal>
+      <Dependent Role="Order">
+        <PropertyRef Name="IDStatus" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="OrderService">
+    <End Type="BlogodatKIAModel.Order" Role="Order" Multiplicity="*" />
+    <End Type="BlogodatKIAModel.Service" Role="Service" Multiplicity="*" />
+  </Association>
+</Schema>

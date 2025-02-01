@@ -1,0 +1,410 @@
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Blagodat.exe.config
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Blagodat.exe
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Blagodat.pdb
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\Blagodat.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\Authorization.g.cs
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\MainWindow.g.cs
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\App.g.cs
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\Blagodat_Content.g.cs
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\Blagodat_MarkupCompile.cache
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\Blagodat_MarkupCompile.lref
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\Authorization.baml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\MainWindow.baml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\Blagodat.g.resources
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\Blagodat.Properties.Resources.resources
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\Blagodat.csproj.GenerateResource.cache
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\Blagodat.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\Blagodat.csproj.CopyComplete
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\Blagodat.exe
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\Blagodat.pdb
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\pages\History.g.cs
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\pages\History.baml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\pages\AddClient.g.cs
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\pages\MakeOrder.g.cs
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\pages\AddClient.baml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\pages\MakeOrder.baml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\App.baml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\runtimes\linux-x64\native\IronBarcodeInterop.so
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\runtimes\linux-x64\native\ReaderInterop.so
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\runtimes\osx-arm64\native\IronBarcodeInterop.dylib
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\runtimes\osx-arm64\native\ReaderInterop.dylib
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\runtimes\osx-x64\native\IronBarcodeInterop.dylib
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\runtimes\osx-x64\native\ReaderInterop.dylib
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\runtimes\win-x64\native\IronBarcodeInterop.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\runtimes\win-x64\native\ReaderInterop.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\runtimes\win-x86\native\IronBarcodeInterop.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\runtimes\win-x86\native\ReaderInterop.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\onnxruntime.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\BitMiracle.LibTiff.NET.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\IronBarCode.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\IronBarcodeDetection.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\IronSoftware.Abstractions.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\IronSoftware.Abstractions.Models.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\IronSoftware.Drawing.Abstractions.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\IronSoftware.Drawing.Common.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\IronSoftware.Logger.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\IronSoftware.Shared.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.ML.OnnxRuntime.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\SixLabors.Fonts.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\SixLabors.ImageSharp.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\SixLabors.ImageSharp.Drawing.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Buffers.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Memory.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Security.AccessControl.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Security.Permissions.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Text.Json.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.ValueTuple.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\BitMiracle.LibTiff.NET.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\IronBarCode.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\IronBarcodeDetection.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\IronSoftware.Abstractions.pdb
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\IronSoftware.Abstractions.Models.pdb
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\IronSoftware.Drawing.Abstractions.pdb
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\IronSoftware.Drawing.Common.pdb
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\IronSoftware.Drawing.Common.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\IronSoftware.Logger.pdb
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\IronSoftware.Shared.pdb
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.ML.OnnxRuntime.pdb
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\SixLabors.Fonts.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\SixLabors.ImageSharp.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\SixLabors.ImageSharp.Drawing.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Buffers.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Memory.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Security.AccessControl.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Security.Permissions.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Text.Json.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.ValueTuple.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Aspose.PDF.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\itextsharp.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.DependencyModel.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Drawing.Common.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Net.Http.Json.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Security.Cryptography.Pkcs.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Aspose.PDF.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\itextsharp.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Net.Http.Json.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Drawing.Common.pdb
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\System.Drawing.Common.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Aspose.BarCode.dll
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\bin\Debug\Aspose.BarCode.xml
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\pages\AllClientList.g.cs
+C:\Users\User\Desktop\rpm\Blagodat\Blagodat\obj\Debug\pages\AllClientList.baml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\runtimes\linux-x64\native\IronBarcodeInterop.so
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\runtimes\linux-x64\native\ReaderInterop.so
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\runtimes\osx-arm64\native\IronBarcodeInterop.dylib
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\runtimes\osx-arm64\native\ReaderInterop.dylib
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\runtimes\osx-x64\native\IronBarcodeInterop.dylib
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\runtimes\osx-x64\native\ReaderInterop.dylib
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\runtimes\win-x64\native\IronBarcodeInterop.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\runtimes\win-x64\native\ReaderInterop.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\runtimes\win-x86\native\IronBarcodeInterop.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\runtimes\win-x86\native\ReaderInterop.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\onnxruntime.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Blagodat.exe.config
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Blagodat.exe
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Blagodat.pdb
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Aspose.BarCode.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Aspose.PDF.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\BitMiracle.LibTiff.NET.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\BouncyCastle.Cryptography.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\EntityFramework.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\EntityFramework.SqlServer.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronBarCode.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronBarcodeDetection.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Abstractions.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Abstractions.Models.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Drawing.Abstractions.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Drawing.Common.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Logger.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Shared.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\itextsharp.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.DotNet.PlatformAbstractions.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.DependencyModel.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Primitives.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.ML.OnnxRuntime.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Newtonsoft.Json.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\SixLabors.Fonts.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\SixLabors.ImageSharp.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\SixLabors.ImageSharp.Drawing.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Buffers.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Drawing.Common.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Memory.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Net.Http.Json.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Numerics.Vectors.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Security.AccessControl.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Security.Cryptography.Pkcs.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Security.Permissions.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Security.Principal.Windows.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Text.Encoding.CodePages.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Text.Encodings.Web.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Text.Json.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.ValueTuple.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Aspose.BarCode.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Aspose.PDF.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\BitMiracle.LibTiff.NET.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\BouncyCastle.Cryptography.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\EntityFramework.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\EntityFramework.SqlServer.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronBarCode.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronBarcodeDetection.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Abstractions.pdb
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Abstractions.Models.pdb
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Drawing.Abstractions.pdb
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Drawing.Common.pdb
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Drawing.Common.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Logger.pdb
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Shared.pdb
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\itextsharp.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Primitives.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.ML.OnnxRuntime.pdb
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\Newtonsoft.Json.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\SixLabors.Fonts.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\SixLabors.ImageSharp.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\SixLabors.ImageSharp.Drawing.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Buffers.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Drawing.Common.pdb
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Drawing.Common.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Memory.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Net.Http.Json.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Numerics.Vectors.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Security.AccessControl.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Security.Cryptography.Pkcs.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Security.Permissions.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Security.Principal.Windows.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Text.Encoding.CodePages.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Text.Encodings.Web.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Text.Json.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.ValueTuple.xml
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\ru\EntityFramework.resources.dll
+D:\неделя номер 3\Blagodat\Blagodat\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat.csproj.AssemblyReference.cache
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\Authorization.g.cs
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\MainWindow.g.cs
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\pages\AddClient.g.cs
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\pages\AllClientList.g.cs
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\pages\History.g.cs
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\pages\MakeOrder.g.cs
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\App.g.cs
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat_Content.g.cs
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat_MarkupCompile.cache
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat_MarkupCompile.lref
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\App.baml
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\Authorization.baml
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\MainWindow.baml
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\pages\AddClient.baml
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\pages\AllClientList.baml
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\pages\History.baml
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\pages\MakeOrder.baml
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat.g.resources
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat.Properties.Resources.resources
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat.csproj.GenerateResource.cache
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat.csproj.CoreCompileInputs.cache
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat.csproj.CopyComplete
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat.exe
+D:\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat.pdb
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\onnxruntime.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Blagodat.exe.config
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Blagodat.exe
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Blagodat.pdb
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Aspose.BarCode.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\BitMiracle.LibTiff.NET.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Abstractions.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Abstractions.Models.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Drawing.Abstractions.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Drawing.Common.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Logger.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Shared.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\itextsharp.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.DependencyModel.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.ML.OnnxRuntime.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\SixLabors.Fonts.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\SixLabors.ImageSharp.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\SixLabors.ImageSharp.Drawing.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Buffers.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Diagnostics.PerformanceCounter.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Drawing.Common.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Memory.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Net.Http.Json.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Security.AccessControl.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Security.Cryptography.Pkcs.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Security.Permissions.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Text.Encoding.CodePages.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Text.Json.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.ValueTuple.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Aspose.BarCode.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\BitMiracle.LibTiff.NET.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Abstractions.pdb
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Abstractions.Models.pdb
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Drawing.Abstractions.pdb
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Drawing.Common.pdb
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Drawing.Common.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Logger.pdb
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\IronSoftware.Shared.pdb
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\itextsharp.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.Binder.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Configuration.Json.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Logging.Abstractions.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.Extensions.Primitives.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Microsoft.ML.OnnxRuntime.pdb
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\SixLabors.Fonts.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\SixLabors.ImageSharp.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\SixLabors.ImageSharp.Drawing.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Buffers.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Drawing.Common.pdb
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Drawing.Common.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Memory.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Net.Http.Json.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Security.AccessControl.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Security.Cryptography.Pkcs.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Security.Permissions.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Text.Encoding.CodePages.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Text.Json.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\System.ValueTuple.xml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\Authorization.g.cs
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\MainWindow.g.cs
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\pages\AddClient.g.cs
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\pages\AllClientList.g.cs
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\pages\History.g.cs
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\pages\MakeOrder.g.cs
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\App.g.cs
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat_Content.g.cs
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat_MarkupCompile.cache
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat_MarkupCompile.lref
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\App.baml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\Authorization.baml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\MainWindow.baml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\pages\AddClient.baml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\pages\AllClientList.baml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\pages\History.baml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\pages\MakeOrder.baml
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat.g.resources
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat.Properties.Resources.resources
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat.csproj.GenerateResource.cache
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat.csproj.CopyComplete
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat.exe
+C:\Users\User\Desktop\неделя номер 3\Blagodat\Blagodat\obj\Debug\Blagodat.pdb

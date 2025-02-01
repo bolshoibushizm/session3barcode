@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="69f1674868f547118b59b5c82b49f2d0" Name="Diagram1">
+        <EntityTypeShape EntityType="BlogodatKIAModel.Client" Width="1.5" PointX="0.75" PointY="5" />
+        <EntityTypeShape EntityType="BlogodatKIAModel.Employee" Width="1.5" PointX="5" PointY="5" />
+        <EntityTypeShape EntityType="BlogodatKIAModel.History" Width="1.5" PointX="7.25" PointY="5.375" />
+        <EntityTypeShape EntityType="BlogodatKIAModel.Order" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="BlogodatKIAModel.Role" Width="1.5" PointX="2.75" PointY="5.5" />
+        <EntityTypeShape EntityType="BlogodatKIAModel.Service" Width="1.5" PointX="5.25" PointY="1.5" />
+        <EntityTypeShape EntityType="BlogodatKIAModel.Status" Width="1.5" PointX="0.75" PointY="1.625" />
+        <EntityTypeShape EntityType="BlogodatKIAModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" />
+        <AssociationConnector Association="BlogodatKIAModel.FK_Order_Client" />
+        <AssociationConnector Association="BlogodatKIAModel.FK_Employee_Role" />
+        <AssociationConnector Association="BlogodatKIAModel.FK_History_Employee" />
+        <AssociationConnector Association="BlogodatKIAModel.FK_Order_Status" />
+        <AssociationConnector Association="BlogodatKIAModel.OrderService" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
